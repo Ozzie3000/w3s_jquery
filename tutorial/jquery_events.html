@@ -75,7 +75,22 @@ jquery_events.html<!DOCTYPE html>
 	  	<br>
 	  	});
   	</li>
-  	<li>When you click a div you hide it</li>
+  	<li>When you double click a div you hide it</li>
+  	<li>
+	  	$("div").dblclick(function(){
+	  	<br>
+	  	&nbsp;&nbsp; $(this).hide();
+	  	<br>
+	  	});
+  	</li>
+  	<li>When your mouse enters a div you hide it</li>
+  	<li>
+	  	$("div").mouseenter(function(){
+	  	<br>
+	  	&nbsp;&nbsp; $(this).hide();
+	  	<br>
+	  	});
+  	</li>
   </ul>
 
  
