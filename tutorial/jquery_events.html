@@ -132,6 +132,12 @@ jquery_events.html<!DOCTYPE html>
     <li>
       Last name: <input id="inp_2" type="text" name="lastName">
     </li>
+    <li>Using multiples with the on() method</li>
+    <li>
+      <p></p>
+      <p></p>
+      <p></p>
+    </li>
   </ul>
 
  
@@ -164,6 +170,8 @@ jquery_events.html<!DOCTYPE html>
     $("#inp_1, #inp_2").focus(function(){
         $(this).css("background-color", "#cccccc");
     });
+
+    //blur
     $("#inp_1, #inp_2").blur(function(){
         $(this).css("background-color", "#ffffff");
     });
