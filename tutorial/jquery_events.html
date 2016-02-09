@@ -134,9 +134,9 @@ jquery_events.html<!DOCTYPE html>
     </li>
     <li>Using multiples with the on() method</li>
     <li>
-      <p></p>
-      <p></p>
-      <p></p>
+      <p id="p_1">Hover, exit, or click me</p>
+      <p id="p_2">Hover, exit, or click me</p>
+      <p id="p_3">Hover, exit, or click me</p>
     </li>
   </ul>
 
@@ -174,6 +174,19 @@ jquery_events.html<!DOCTYPE html>
     //blur
     $("#inp_1, #inp_2").blur(function(){
         $(this).css("background-color", "#ffffff");
+    });
+
+    //on with 3 functions
+    $("#p_1, #p_2, #p_3").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  
     });
 
 	}); //end doc ready
