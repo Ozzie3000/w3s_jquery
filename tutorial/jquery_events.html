@@ -99,6 +99,17 @@ jquery_events.html<!DOCTYPE html>
       <br>
       });
     </li>
+    <li>When your mouse down on the div below alert</li>
+    <li>
+      <div id="md1">HERE</div>
+    </li>
+    <li>
+      $("#md1").mousedown(function(){
+      <br>
+      &nbsp;&nbsp; alert("Mouse down");
+      <br>
+      });
+    </li>
   </ul>
 
  
@@ -109,6 +120,9 @@ jquery_events.html<!DOCTYPE html>
 
 
 	$(document).ready(function(){
+    $("#md1").mousedown(function(){
+      alert("Mouse down");
+    });
 
 	}); //end doc ready
 </script>
