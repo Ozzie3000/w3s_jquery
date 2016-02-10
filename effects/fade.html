@@ -70,6 +70,14 @@
   	<li id="sp_3"></li>
   </ul>
 
+  <ul><span class="ul_tops">fadeOut() method</span>
+  	<li>Used to make visible elments hidden</li>
+  	<li>Basic syntax:</li>
+  	<li>$(selector).fadeOut(speed,callback); /// both time and callback are optional</li>
+  	<li>Fade out shapes above if visible</li>
+  	<li><button id="btn_2" class="btn">Fade out shapes</button></li>
+  </ul>
+
  
 
 <br><br><br>
@@ -78,10 +86,18 @@
 
 
 	$(document).ready(function(){
+		//fadeIn()
 		$("#btn_1").click(function(){
 			$("#sp_1").fadeIn(1000);
 			$("#sp_2").fadeIn(2000);
 			$("#sp_3").fadeIn(3000);
+		});
+
+		//fadeOut()
+		$("#btn_2").click(function(){
+			$("#sp_1").fadeOut(1000);
+			$("#sp_2").fadeOut(2000);
+			$("#sp_3").fadeOut(3000);
 		})
 
 	}); //end doc ready
