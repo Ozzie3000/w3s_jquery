@@ -8,7 +8,13 @@
 <link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
-<style type="text/css"></style>
+<style type="text/css">
+	#sp_1, #sp_2, #sp_3{
+		margin-top: 4px;
+		margin-bottom: 4px;
+		width: 80%;
+	}
+</style>
 <!-- new version out now  -->
 <!--
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
@@ -42,7 +48,11 @@
   <ul><span class="ul_tops">fadeIn() method</span>
   	<li>Used to make hidden elements visible</li>
   	<li>Basic syntax:</li>
-  	<li>$(selector).fadeIn(speed,callback);</li>
+  	<li>$(selector).fadeIn(speed,callback); /// both time and callback are optional</li>
+  	<li><button id="btn_1" class="btn">Fade in shapes</button></li>
+  	<li id="sp_1"></li>
+  	<li id="sp_2"></li>
+  	<li id="sp_3"></li>
   </ul>
 
  
