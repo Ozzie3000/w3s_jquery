@@ -28,7 +28,7 @@
 
   <ul><span class="ul_tops">Hide and show</span>
   	<li>
-  		<p id="h_s1">
+  		<p id="hs_1">
   			This paragraph will appear or disappear based on buttons clicked below
   		</p>
   	</li>
@@ -49,7 +49,10 @@
 
 	$(document).ready(function(){
 		$("#btn_1").click(function(){
-			$("h_s1").hide(1500);
+			$("#hs_1").hide(1500);
+		});
+		$("#btn_2").click(function(){
+			$("#hs_1").show(1500);
 		});
 
 	}); //end doc ready
