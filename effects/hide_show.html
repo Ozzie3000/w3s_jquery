@@ -33,6 +33,7 @@
   	<li>$(selector).show(speed,callback);</li>
   	<li>speed is in milliseconds to execute</li>
   	<li>callback is a function to be executed after completion</li>
+  	<li>callback will execute right away if the first part need not be executed or is finished</li>
   	<li>
   		<p id="hs_1">
   			This paragraph will appear or disappear based on buttons clicked below
@@ -46,19 +47,23 @@
   	</li>
   </ul>
 
+  <ul><span class="ul_tops">Toggle</span>
+  	<li></li>
+  </ul>
+
  
 
 <br><br><br>
 <script>
 	//document.getElementById("").
-
+	function bob(){ alert("sneakums"); };
 
 	$(document).ready(function(){
 		$("#btn_1").click(function(){
 			$("#hs_1").hide(1500);
 		});
 		$("#btn_2").click(function(){
-			$("#hs_1").show(1500);
+			$("#hs_1").show(1500, bob);
 		});
 
 	}); //end doc ready
