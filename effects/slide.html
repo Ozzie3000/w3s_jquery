@@ -56,6 +56,13 @@
 	<div id="panel">Hello world!</div>
 	<br>
 
+	<ul><span class="ul_tops">slideUp() method</span>
+  	<li>A jQuery method to reveal something starting from the bottom</li>
+  	<li>Basic syntax:</li>
+  	<li>$(selector).slideUp(speed,callback); // both time and callback are optional</li>
+  	<li>Show hidden div below</li>
+  </ul>
+
  
 
 <br><br><br>
@@ -64,13 +71,16 @@
 
 
 	$(document).ready(function(){
-		$("#clicker").click(function(){
-			$("#panel").slideDown(1500, funky_1);
-		});
 
-		function funky_1(){
-			$("#clicker").css("color", "red");
-		}
+	//slideDown()
+	$("#clicker").click(function(){
+		$("#panel").slideDown(1500, funky_1);
+	});
+
+	//callback func within slide down
+	function funky_1(){
+		$("#clicker").css("color", "red");
+	}
 
 	}); //end doc ready
 </script>
