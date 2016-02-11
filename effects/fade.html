@@ -63,7 +63,7 @@
   <ul><span class="ul_tops">fadeIn() method</span>
   	<li>Used to make hidden elements visible</li>
   	<li>Basic syntax:</li>
-  	<li>$(selector).fadeIn(speed,callback); /// both time and callback are optional</li>
+  	<li>$(selector).fadeIn(speed,callback); // both time and callback are optional</li>
   	<li><button id="btn_1" class="btn">Fade in shapes</button></li>
   	<li id="sp_1"></li>
   	<li id="sp_2"></li>
@@ -73,7 +73,7 @@
   <ul><span class="ul_tops">fadeOut() method</span>
   	<li>Used to make visible elments hidden</li>
   	<li>Basic syntax:</li>
-  	<li>$(selector).fadeOut(speed,callback); /// both time and callback are optional</li>
+  	<li>$(selector).fadeOut(speed,callback); // both time and callback are optional</li>
   	<li>Fade out shapes above if visible</li>
   	<li><button id="btn_2" class="btn">Fade out shapes</button></li>
   </ul>
@@ -81,9 +81,19 @@
   <ul><span class="ul_tops">fadeToggle() method</span>
   	<li>Used to toggle between fadeIn and fadeOut</li>
   	<li>Basic syntax:</li>
-  	<li>$(selector).fadeToggle(speed,callback); /// both time and callback are optional</li>
+  	<li>$(selector).fadeToggle(speed,callback); // both time and callback are optional</li>
   	<li>Toggle shapes above</li>
   	<li><button id="btn_3" class="btn">Toggle shapes</button></li>
+  </ul>
+
+  <ul><span class="ul_tops">fadeTo() method</span>
+  	<li>Used to change opacity of an element to a certain amount</li>
+  	<li>Basic syntax:</li>
+  	<li>$(selector).fadeTo(speed,opacity,callback);</li>
+  	<li>Of the three parameters only the call back is optional</li>
+  	<li>Fade shapes above</li>
+  	<li>This effect will last even if you use others to fade in and out</li>
+  	<li><button id="btn_4" class="btn">Fade shapes</button></li>
   </ul>
 
  
@@ -108,11 +118,18 @@
 			$("#sp_3").fadeOut(3000);
 		});
 
-		//fadeToggle
+		//fadeToggle()
 		$("#btn_3").click(function(){
 			$("#sp_1").fadeToggle(1000);
 			$("#sp_2").fadeToggle(2000);
 			$("#sp_3").fadeToggle(3000);
+		});
+
+		//fadeTo()
+		$("#btn_4").click(function(){
+			$("#sp_1").fadeTo(1000, 0.99);
+			$("#sp_2").fadeTo(2000, 0.66);
+			$("#sp_3").fadeTo(3000, 0.33);
 		});
 
 	}); //end doc ready
