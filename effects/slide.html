@@ -62,8 +62,12 @@
 
 	$(document).ready(function(){
 		$("#clicker").click(function(){
-			$("#panel").slideDown(1500);
+			$("#panel").slideDown(1500, funky_1);
 		});
+
+		function funky_1(){
+			$("#clicker").css("color", "red");
+		}
 
 	}); //end doc ready
 </script>
