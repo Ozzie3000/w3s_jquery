@@ -9,16 +9,19 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
-	#panel, #clicker{
+	#panel_1, #clicker_1, #panel_2, #clicker_2{
     padding: 5px;
     text-align: center;
     background-color: #e7eecc;
     border: solid 1px #c4c7c7;
 	}
 
-	#panel{
-	    padding: 50px;
-	    display: none;
+	#panel_1, #panel_2{
+	  padding: 50px;
+	}
+
+	#panel_1{
+	  display: none;
 	}
 </style>
 <!-- new version out now  -->
@@ -52,8 +55,8 @@
   </ul>
 
 	<br>
-  <div id="clicker">Click me to slide down panel</div>
-	<div id="panel">Hello world!</div>
+  <div id="clicker_1">Click me to slide down panel</div>
+	<div id="panel_1">Hello world!</div>
 	<br>
 
 	<ul><span class="ul_tops">slideUp() method</span>
@@ -62,6 +65,11 @@
   	<li>$(selector).slideUp(speed,callback); // both time and callback are optional</li>
   	<li>Show hidden div below</li>
   </ul>
+
+  <br>
+  <div id="clicker_2">Click me to slide up panel</div>
+	<div id="panel_2">Bye world!</div>
+	<br>
 
  
 
@@ -73,13 +81,23 @@
 	$(document).ready(function(){
 
 	//slideDown()
-	$("#clicker").click(function(){
-		$("#panel").slideDown(1500, funky_1);
+	$("#clicker_1").click(function(){
+		$("#panel_1").slideDown(1500, funky_1);
 	});
 
 	//callback func within slide down
 	function funky_1(){
-		$("#clicker").css("color", "red");
+		$("#clicker_1").css("color", "red");
+	}
+
+	//slideUp()
+	$("#clicker_2").click(function(){
+		$("#panel_2").slideUp(1500, funky_2);
+	});
+
+	//callback func within slide up
+	function funky_2(){
+		$("#clicker_2").css("color", "red");
 	}
 
 	}); //end doc ready
