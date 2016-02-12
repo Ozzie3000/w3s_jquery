@@ -57,6 +57,10 @@
 
   <ul style="margin-top:150px;"><span class="ul_tops">animate() change properties</span>
   	<li>Disclosure: you will not be able to animate color without a jQuery animations plugin</li>
+  	<li>We will now animate multiple properties</li>
+  	<li>
+  		<button id="btn_2" class="btn">Begin the Show</button>
+  	</li>
   </ul>
 
   <br>
@@ -89,8 +93,16 @@
 				height: '50px',
 				width: '300px',
 				opacity: '1'
-			});
+			},
+			2000,
+			cb_2
+			);
 		});
+
+		//callback func cb2
+		function cb_2(){
+			$("#btn_2").text("Show has ended");
+		}
 
 	}); //end doc ready
 </script>
