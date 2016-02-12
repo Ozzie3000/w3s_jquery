@@ -9,11 +9,14 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
-	#divvy_1{
+	#divvy_1, #divvy_2{
 		height: 100px;
 		width: 100px;
 		position: absolute;
 		background-color: #489e12;
+	}
+	#divvy_2{
+		opacity: 0.5;
 	}
 </style>
 <!-- new version out now  -->
@@ -52,7 +55,7 @@
   <div id="divvy_1"></div>
   <br>
 
-  <ul><span class="ul_tops">animate() change properties</span>
+  <ul style="margin-top:150px;"><span class="ul_tops">animate() change properties</span>
   	<li>Disclosure: you will not be able to animate color without a jQuery animations plugin</li>
   </ul>
 
@@ -78,6 +81,16 @@
 		function cb_1(){
 			$("#para_1").text("'Look at em go! Didn't go far, but still...");
 		}
+
+		//animate() mulitples
+		$("#btn_2").click(function(){
+			$("#divvy_2").animate({
+				left: '777px',
+				height: '50px',
+				width: '300px',
+				opacity: '1'
+			});
+		});
 
 	}); //end doc ready
 </script>
