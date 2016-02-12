@@ -118,8 +118,17 @@
 	});
 
 	//callback func within slide up
+	//work on messages
 	function funky_3(){
-		$("#clicker_3").css("color", "red");
+		if ($('#clicker_3').css("color") != "rgb(255, 0, 0)"){
+			$("#clicker_3").css("color", "red");
+			$("#panel_3").text("Super Secret Panel here");
+		} else {
+			$("#panel_3").text("I'm Melting! Melting! Oh, What A World, What A World...");
+			$("#clicker_3").css("color", "blue");
+			
+		}
+		
 	}
 
 	}); //end doc ready
