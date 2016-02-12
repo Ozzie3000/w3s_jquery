@@ -114,21 +114,24 @@
 
 	//slideToggle()
 	$("#clicker_3").click(function(){
-		$("#panel_3").slideToggle(1500, funky_3);
+		//$("#panel_3").slideToggle(1500, funky_3);
+		$("#panel_3").slideToggle(1500);
 	});
 
-	//callback func within slide up
-	//work on messages
+	//change info
+	$("#clicker_3").click(function(){
+		funky_3();
+	});
+
+	//functional change
 	function funky_3(){
 		if ($('#clicker_3').css("color") != "rgb(255, 0, 0)"){
-			$("#clicker_3").css("color", "red");
-			$("#panel_3").text("Super Secret Panel here");
-		} else {
+			$("#clicker_3").css("color", "red");			
 			$("#panel_3").text("I'm Melting! Melting! Oh, What A World, What A World...");
+		} else {
+			$("#panel_3").text("Super Secret Panel here");
 			$("#clicker_3").css("color", "blue");
-			
-		}
-		
+		};
 	}
 
 	}); //end doc ready
