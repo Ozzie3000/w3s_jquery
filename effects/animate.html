@@ -48,6 +48,7 @@
   </ul>
 
   <br>
+  <p id="para_1"></p>
   <div id="divvy_1"></div>
   <br>
 
@@ -59,6 +60,10 @@
 
 
 	$(document).ready(function(){
+		//animate()
+		$("#btn_1").click(function(){
+			$("#divvy_1").animate({left: '333px'},2000, cb_1);
+		});
 
 	}); //end doc ready
 </script>
