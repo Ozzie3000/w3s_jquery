@@ -117,6 +117,24 @@
 			$("#btn_2").text("Show has ended");
 		}
 
+		//animate() mulitples
+		$("#btn_3").click(function(){
+			$("#divvy_3").animate({
+				left: '999px',
+				height: '-=75px',
+				width: '+=100px',
+				opacity: '1'
+			},
+			2000,
+			cb_3
+			);
+		});
+
+		//callback func cb2
+		function cb_3(){
+			$("#btn_3").text("'Winter is coming hard'");
+		}
+
 	}); //end doc ready
 </script>
 </body>
