@@ -9,7 +9,7 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
-	#divvy_1, #divvy_2, #divvy_3{
+	#divvy_1, #divvy_2, #divvy_3, #divvy_4{
 		height: 100px;
 		width: 100px;
 		position: absolute;
@@ -17,6 +17,9 @@
 	}
 	#divvy_2, #divvy_3{
 		opacity: 0.5;
+	}
+	#divvy_4{
+		display: none;
 	}
 </style>
 <!-- new version out now  -->
@@ -83,15 +86,15 @@
 
   <ul style="margin-top:150px;"><span class="ul_tops">animate() using words</span>
   	<li>Disclosure: you will not be able to animate color without a jQuery animations plugin</li>
-  	<li>You can use the following as properties for height: show, hide, toggle</li>
+  	<li>You can use the following as properties for height: toggle, hide, show</li>
   	<li>
-  		<button id="btn_4a" class="btn">Begin the Show</button>
+  		<button id="btn_4a" class="btn">Toggle the div</button>
   	</li>
   	<li>
-  		<button id="btn_4b" class="btn">Hide the Show</button>
+  		<button id="btn_4b" class="btn">hide the Show</button>
   	</li>
   	<li>
-  		<button id="btn_4c" class="btn">Toggle the Show</button>
+  		<button id="btn_4c" class="btn">show the Show</button>
   	</li>
   </ul>
 
@@ -102,7 +105,7 @@
 
  
 
-<br><br><br>
+<br><br><br><br><br>
 <script>
 	//document.getElementById("").
 
@@ -153,6 +156,27 @@
 		function cb_3(){
 			$("#btn_3").text("'Winter is coming hard'");
 		}
+
+		//animate with toggle
+		$("#btn_4a").click(function(){
+			$("#divvy_4").animate({
+				height: 'toggle'
+			});
+		});
+
+		//animate with hide
+		$("#btn_4b").click(function(){
+			$("#divvy_4").animate({
+				height: 'hide'
+			});
+		});
+
+		//animate with show
+		$("#btn_4c").click(function(){
+			$("#divvy_4").animate({
+				height: 'show'
+			});
+		});
 
 	}); //end doc ready
 </script>
