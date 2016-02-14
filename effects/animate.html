@@ -217,7 +217,20 @@
 		$("#btn_6").click(function(){
 			var bary_1 = $("#divvy_6");
 			bary_1.animate({left:'333px'},700,cb_6);
+			bary_1.animate({width:'+=100px'},700,cb_6);
+			bary_1.animate({fontSize:'1.5em'},700,cb_6);
+			bary_1.animate({left:'-=333px'},700,cb_6);
+			bary_1.animate({fontSize:'1em'},700,cb_6);
+			bary_1.animate({width:'-=100px'},700,cb_6);
 		});
+
+		//callback function 6
+		var a = 1;
+		function cb_6(){
+			$("#para_6").text("Animation " + a + " done");
+			a++;
+			return a;
+		}
 
 	}); //end doc ready
 </script>
