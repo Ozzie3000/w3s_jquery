@@ -88,14 +88,24 @@
 			$("#divvy_1").text("Well it was a secret anyway");
 		}
 
-		//stop no params
+		//stop no params  false, false
 		$("#btn_1").click(function(){
 			$("#divvy_1").stop();
 		});
 
-		//stop with params
+		//stop with params false, true
 		$("#btn_2").click(function(){
-			$("#divvy_1").stop(false,true);
+			$("#divvy_1").stop(0,1);
+		});
+
+		//stop with params
+		$("#btn_3").click(function(){
+			$("#divvy_1").stop(1,0);
+		});
+
+		//stop with params
+		$("#btn_4").click(function(){
+			$("#divvy_1").stop(1,1);
 		});
 
 	}); //end doc ready
