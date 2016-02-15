@@ -55,6 +55,10 @@
 
 
 	$(document).ready(function(){
+		//click to hide
+		$("#para_1").click(function(){
+			$("#divvy_1").hide(2000, function(){ $("#para_1").text("You can follow instructions"); });
+		});
 
 	}); //end doc ready
 </script>
