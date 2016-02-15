@@ -33,8 +33,9 @@
 	<br /><br />
   <h1>S and jQuery | chaining</h1>
 
-  <ul><span class="ul_tops"></span>
-  	<li></li>
+  <ul><span class="ul_tops">Chaining together methods</span>
+  	<li>You can piece together several methods on one element</li>
+  	<li>This will let you take advantage of finding the element only once</li>
   </ul>
 
   <br>
@@ -51,6 +52,14 @@
 
 
 	$(document).ready(function(){
+		//only animations.   no .text() for example
+		$("#para_1").click(function(){
+			$("#divvy_1").css("color","red")
+			.slideUp(1500)
+			.slideDown(1500)
+			.slideUp(1500)
+			.slideDown(1500);
+		});
 
 	}); //end doc ready
 </script>
