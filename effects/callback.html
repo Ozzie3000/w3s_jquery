@@ -9,7 +9,7 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
-	#divvy_1{
+	#divvy_1, #divvy_2{
 		height: 100px;
 		width: 100px;
 		position: absolute;
@@ -47,12 +47,17 @@
   <div id="divvy_1">Green Panel here</div>
   <br>
 
-  <ul><span class="ul_tops">Without a callback</span>
+  <ul style="margin-top:150px;"><span class="ul_tops">Without a callback</span>
   	<li>The next line of alert will execute before it hides</li>
   </ul>
 
- 
+  <br>
+  <p id="para_2">Click me to see something cool</p>
+  <div id="divvy_2">Green Panel here</div>
+  <br>
 
+ 
+  <div style="margin-top:250px;"></div>
 <br><br><br>
 <script>
 	//document.getElementById("").
@@ -62,6 +67,12 @@
 		//click to hide
 		$("#para_1").click(function(){
 			$("#divvy_1").hide(2000, function(){ $("#para_1").text("You can follow instructions"); });
+		});
+
+		//click to hide
+		$("#para_2").click(function(){
+			$("#divvy_2").hide(3000);
+			$("#para_2").text("This executed before the panel completely hide");
 		});
 
 	}); //end doc ready
