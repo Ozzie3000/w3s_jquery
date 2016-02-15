@@ -57,6 +57,9 @@
   	<li>
   		<button id="btn_1" class="btn">Stop no params</button>
   	</li>
+  	<li>
+  		<button id="btn_2" class="btn">With params</button>
+  	</li>
   </ul>
 
   <br>
@@ -85,8 +88,14 @@
 			$("#divvy_1").text("Well it was a secret anyway");
 		}
 
+		//stop no params
 		$("#btn_1").click(function(){
 			$("#divvy_1").stop();
+		});
+
+		//stop with params
+		$("#btn_2").click(function(){
+			$("#divvy_1").stop(false,true);
 		});
 
 	}); //end doc ready
