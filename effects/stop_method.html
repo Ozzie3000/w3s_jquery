@@ -51,9 +51,19 @@
   	<li>
   		param2 is optional. It specifies if current animation should complete immediately or not
   	</li>
+  	<li>
+  		<button id="btn_1" class="btn">Stop no params</button>
+  	</li>
   </ul>
 
+  <br>
+  <p id="para_1">Click me to animate below</p>
+  <div id="divvy_1"></div>
+  <br>
+
  
+
+ <div style="margin-top:150px;"></div>
 
 <br><br><br>
 <script>
@@ -61,6 +71,9 @@
 
 
 	$(document).ready(function(){
+		$("#btn_1").click(function(){
+			$("#divvy_1").stop();
+		});
 
 	}); //end doc ready
 </script>
