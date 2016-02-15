@@ -10,10 +10,13 @@
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
 	#divvy_1{
+		display: none;
 		height: 100px;
-		width: 100px;
+		width: 300px;
 		position: absolute;
 		background-color: #489e12;
+		font-size: 18px;
+		text-align: center;
 	}
 </style>
 <!-- new version out now  -->
@@ -58,12 +61,12 @@
 
   <br>
   <p id="para_1">Click me to animate below</p>
-  <div id="divvy_1"></div>
+  <div id="divvy_1">Super Secret panel</div>
   <br>
 
  
 
- <div style="margin-top:150px;"></div>
+ <div style="margin-top:450px;"></div>
 
 <br><br><br>
 <script>
@@ -71,6 +74,17 @@
 
 
 	$(document).ready(function(){
+		$("#para_1").click(function(){
+			$("#divvy_1").slideDown(3000, cb_1);
+			$("#divvy_1").animate({height: '+=200px',opacity:'1'},1500);
+			$("#divvy_1").animate({width: '+=400px',opacity: '1'},3000);
+		});
+
+		//callback 1
+		function cb_1(){
+			$("#divvy_1").text("Well it was a secret anyway");
+		}
+
 		$("#btn_1").click(function(){
 			$("#divvy_1").stop();
 		});
