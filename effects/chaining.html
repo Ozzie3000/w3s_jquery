@@ -71,6 +71,28 @@
 			.slideDown(1500);
 		});
 
+		//only animations v2.   no other methods
+		$("#para_2").click(function(){
+			$("#divvy_2").css("color","black")
+			.fadeOut(1500)
+			.fadeIn(1500)
+			.fadeTo(1500,0.2)
+			.delay(2500)
+			.fadeTo(1500,1)
+			.fadeToggle(1500)
+			.fadeToggle(1500)
+			.hide(1500)
+			.show(1500)
+			.slideUp(1500)
+			.slideDown(1500)
+			.toggle(1500)
+			.toggle(1500)
+			.animate({"left":"+=111px"},1000)
+			.animate({"left":"+=111px"},1000)
+			.animate({"left":"+=111px"},1000)
+			.animate({"left":"-=333px"},1000);
+		});
+
 	}); //end doc ready
 </script>
 </body>
