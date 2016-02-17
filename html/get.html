@@ -38,10 +38,11 @@
   </ul>
 
   <ul><span class="ul_tops">.text()</span>
-  	<li id="test1">This is <b>test 1</b></li>
+  	<li id="test_1">This is <b>test 1</b></li>
   	<li>
   		<button id="btn_1">log, alet and write test 1</button>
   	</li>
+  	<li id="target_1"></li>
   </ul>
  
 
@@ -51,6 +52,15 @@
 
 
 	$(document).ready(function(){
+		$("#btn_1").click(function(){
+			var a = ($("#test_1").text());
+			//alert
+			alert($("#test_1").text());
+			//console log
+			console.log(a);
+			//getting and setting with text
+			$("#target_1").text($("#test_1").text());
+		});
 
 	}); //end doc ready
 </script>
