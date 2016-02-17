@@ -92,6 +92,21 @@
 			$("#target_2d").html(b);
 		});
 
+		//.val()
+		//.html() method
+		$("#btn_3").click(function(){
+			var c = $("#test_3").val();
+			//alert
+			alert($("#test_3").val());
+			//console log
+			console.log(c);
+			//getting and setting with val
+			$("#target_3a").text($("#test_3").val());
+			$("#target_3b").html($("#test_3").html());
+			$("#target_3c").text(c);
+			$("#target_3d").html(c);
+		});
+
 	}); //end doc ready
 </script>
 </body>
