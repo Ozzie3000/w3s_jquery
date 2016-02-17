@@ -46,11 +46,14 @@
   </ul>
 
   <ul><span class="ul_tops">.html()</span>
-  	<li id="text_2">This is <b>test 1</b></li>
+  	<li id="test_2">This is <b>test 1</b></li>
   	<li>
   		<button id="btn_2">alert, log and write test 2</button>
   	</li>
-  	<li id="target_2"></li>
+  	<li id="target_2a"></li>
+  	<li id="target_2b"></li>
+  	<li id="target_2c"></li>
+  	<li id="target_2d"></li>
   </ul>
  
 
@@ -60,14 +63,29 @@
 
 
 	$(document).ready(function(){
+		//.text() method
 		$("#btn_1").click(function(){
-			var a = ($("#test_1").text());
+			var a = $("#test_1").text();
 			//alert
 			alert($("#test_1").text());
 			//console log
 			console.log(a);
 			//getting and setting with text
 			$("#target_1").text($("#test_1").text());
+		});
+
+		//.html() method
+		$("#btn_2").click(function(){
+			var b = $("#test_2").html();
+			//alert
+			alert($("#test_2").html());
+			//console log
+			console.log(b);
+			//getting and setting with html
+			$("#target_2a").text($("#test_2").html());
+			$("#target_2b").html($("#test_2").html());
+			$("#target_2c").text(b);
+			$("#target_2d").html(b);
 		});
 
 	}); //end doc ready
