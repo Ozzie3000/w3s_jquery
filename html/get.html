@@ -72,12 +72,12 @@
   	<li>Basic syntax:</li>
   	<li>$("selector").attr("name_of_attr")</li>
   	<li>Get href attribute from example below</li>
-  	<li><a href="https://www.amazon.com" target="_blank">Amazon</a></li>
+  	<li><a href="https://www.amazon.com" id="anchy_1" target="_blank">Amazon</a></li>
   	<li>$("a").attr("href");</li>
   	<li>
-  		<button id="btn_1" class="btn">Get href from above</button>
+  		<button id="btn_4" class="btn">Get href from above</button>
   	</li>
-  	<li id="target_1"></li>
+  	<li id="target_4"></li>
   </ul>
  
 
@@ -127,6 +127,12 @@
 			$("#target_3d").html(c);
 		});
 
+		//button click
+		$("#btn_4").click(function(){
+			//get href from anchor
+			var a1 = $("#anchy_1").attr("href");
+			$("#target_4").text(a1);
+		});
 	}); //end doc ready
 </script>
 </body>
