@@ -39,6 +39,13 @@
 
   <ul><span class="ul_tops">.text() method</span>
   	<li></li>
+  	<li>
+  		Type here<input type="text" id="trap_1"></input>
+  	</li>
+  	<li>
+  		<button id="btn_1">Grab text above and put it below</button>
+  	</li>
+  	<li><span id="target_1"></span></li>
   </ul>
 
  
@@ -49,6 +56,10 @@
 
 
 	$(document).ready(function(){
+		$("#btn_1").click(function(){
+			var message = $("#trap_1").val();
+			$("#target_1").text(message);
+		});
 
 	}); //end doc ready
 </script>
