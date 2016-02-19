@@ -50,7 +50,7 @@
 
   <ul><span class="ul_tops">.html() method</span>
   	<li>Now we will grab the text content and change the html content</li>
-    <li><span id="trap_2">Grab me and my container</span></li>
+    <li id="trap_2"><span >Grab <b>me</b> and my container</span></li>
     <li>
       <button id="btn_2">Grab HTML above and put it below</button>
     </li>
@@ -77,7 +77,8 @@
     //.html() set
     $("#btn_2").click(function(){
       var html_stuff = $("#trap_2").html();
-      $("#target_2").html(html_stuff);
+      $("#target_2a").html(html_stuff);
+      $("#target_2b").html("Targeted the li element that housed the span with a b tag");
     });
 
 	}); //end doc ready
