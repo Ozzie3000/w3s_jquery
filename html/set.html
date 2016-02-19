@@ -49,14 +49,15 @@
   </ul>
 
   <ul><span class="ul_tops">.html() method</span>
-  	<li>Now we will grab the html and not just the text</li>
+  	<li>Now we will grab the text content and change the html content</li>
     <li><span id="trap_2">Grab me and my container</span></li>
     <li>
       <button id="btn_2">Grab HTML above and put it below</button>
     </li>
     <li>
-      <textarea id="target_2"></textarea>
+      <textarea id="target_2a"></textarea>
     </li>
+    <li id="target_2b"></li>
   </ul>
 
  
@@ -67,10 +68,17 @@
 
 
 	$(document).ready(function(){
+    //.text() set
 		$("#btn_1").click(function(){
 			var message = $("#trap_1").val();
 			$("#target_1").text(message);
 		});
+
+    //.html() set
+    $("#btn_2").click(function(){
+      var html_stuff = $("#trap_2").html();
+      $("#target_2").html(html_stuff);
+    });
 
 	}); //end doc ready
 </script>
