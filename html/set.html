@@ -112,6 +112,9 @@
     <li>
       <a href="https://www.yahoo.com" id="anchy_2" title="Y search engine"target="_blank">Yahoo</a>
     </li>
+    <li>
+      <button id="btn_5">Change where link above goes</button>
+    </li>
   </ul>
 
  
@@ -146,6 +149,15 @@
     $("#btn_4").click(function(){
       $("#anchy_1").text("StartPage");
       $("#anchy_1").attr("href","https://www.startpage.com");
+    });
+
+    //.attr() change anchor link
+    //only one searching the DOM. Faster
+    $("#btn_5").click(function(){
+      $("#anchy_2").attr({
+        "href":"https://www.startpage.com",
+        "title":"some what obscure search engine"
+      });
     });
 
 	}); //end doc ready
