@@ -185,6 +185,13 @@
       });
     });
 
+    //.attr() callback
+    $("#btn_6").click(function(){
+      $("#anchy_3").attr("href", function(i, orig_stuff){
+          return orig_stuff + "/gp/goldbox"; 
+      });
+    });
+
 	}); //end doc ready
 </script>
 </body>
