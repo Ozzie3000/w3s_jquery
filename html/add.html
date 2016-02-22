@@ -56,7 +56,7 @@
 	  </ul>
 	</div>
 
-	<div>
+	<div id="divvy_2">
 	  <ul><span class="ul_tops">.prepend() method</span>
 	    <li>Now we will insert at the beginning of the HTML elent you select</li>
 	    <li>Example 2:</li>
@@ -64,6 +64,7 @@
 	      <p>Paragraph 1.</p>
 	      <p>Paragraph 2.</p>
 	      <br>
+	      <b>Text right before OL node</b>
 	      <ol>
 	        Text within OL, but not in a separate node
 	        <li>o li 1.</li>
@@ -105,6 +106,13 @@
     $("#btn_3").click(function(){
       $("#divvy_2 p").prepend("...TEST: " + b_pary + "||| ");
       b_pary++;
+    });
+
+    //.prepend() to ol
+    var b_ole = 1;
+    $("#btn_4").click(function(){
+      $("#divvy_2 ol").prepend("<li>Clicked button: " + b_ole);
+      b_ole++;
     });
 
 	}); //end doc ready
