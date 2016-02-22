@@ -62,10 +62,19 @@
 
 
 	$(document).ready(function(){
+    var pary = 1;
 		//.append() to paragraphs
-		$("btn_1").click(function(){
-			$("p").append("TEST");
+		$("#btn_1").click(function(){
+			$("p").append("...TEST: " + pary + "||| ");
+      pary++;
 		});
+
+    //.append() to ol
+    var ole = 1;
+    $("#btn_2").click(function(){
+      $("ol").append("<li>Clicked button: " + ole)
+      ole++;
+    });
 
 	}); //end doc ready
 </script>
