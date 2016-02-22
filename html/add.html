@@ -96,6 +96,13 @@
       ole++;
     });
 
+    //.prepend() to paragraphs
+    var b_pary = 1;
+    $("#btn_3").click(function(){
+      $("p").prepend("...TEST: " + b_pary + "||| ");
+      b_pary++;
+    });
+
 	}); //end doc ready
 </script>
 </body>
