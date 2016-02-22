@@ -121,6 +121,15 @@
       b_ole++;
     });
 
+    //multiple params
+    function appendText() {
+	    var var_1 = "<p>Test 1. String inside p tags.</p>";              // Create text with HTML
+	    var var_2 = $("<p></p>").text("Test 2. String inside p tags.");  // Create text with jQuery
+	    var var_3 = document.createElement("p");
+	    var_3.innerHTML = "Test 3. String inside p tags.";               // Create text with DOM
+	    $("stuff").append(var_1, var_2, var_3);     // Append new elements
+		}
+
 	}); //end doc ready
 </script>
 </body>
