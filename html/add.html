@@ -182,7 +182,7 @@
 		  var var_5 = $("<i></i>").text(" loves ");    // Create with jQuery
 		  var var_6 = document.createElement("b");   // Create with DOM
 		  var_6.innerHTML = "Link!";
-		  $("img").before(var_4, var_5, var_6);      // Insert new elements before img
+		  $("img:last").before(var_4, var_5, var_6);      // Insert new elements before img
 		}
 
 		//mulitple params func 3
@@ -194,7 +194,10 @@
 		  $("img").after(var_7, var_8, var_9);      // Insert new elements after img
 		}
 
-
+		//.before() method with multiple params
+    $("#btn_8").click(function(){
+      beforeText();
+    });
 
 	}); //end doc ready
 </script>
