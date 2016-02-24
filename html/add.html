@@ -185,6 +185,16 @@
 		  $("img").before(var_4, var_5, var_6);      // Insert new elements before img
 		}
 
+		//mulitple params func 3
+		function afterText(){
+		  var var_7 = "<b>She</b>";                   // Create element with HTML
+		  var var_8 = $("<i></i>").text(" just ");    // Create with jQuery
+		  var var_9 = document.createElement("b");   // Create with DOM
+		  var_9.innerHTML = "doesn't know it!";
+		  $("img").after(var_7, var_8, var_9);      // Insert new elements after img
+		}
+
+
 
 	}); //end doc ready
 </script>
