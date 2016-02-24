@@ -176,6 +176,15 @@
       $("img").after("<b>After</b>");
     });
 
+    //multiple params func 2
+    function beforeText(){
+		  var var_4 = "<b>Zelda</b>";                   // Create element with HTML
+		  var var_5 = $("<i></i>").text(" loves ");    // Create with jQuery
+		  var var_6 = document.createElement("b");   // Create with DOM
+		  var_6.innerHTML = "Link!";
+		  $("img").before(var_4, var_5, var_6);      // Insert new elements before img
+		}
+
 
 	}); //end doc ready
 </script>
