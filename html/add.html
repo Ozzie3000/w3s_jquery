@@ -168,12 +168,12 @@
 
 		//.before() methods
     $("#btn_6").click(function(){
-      $("img").before("<b>Before</b>");
+      $("img:first").before("<b>Before</b>");
     });
 
     //.after() methods
     $("#btn_7").click(function(){
-      $("img").after("<b>After</b>");
+      $("img:first").after("<b>After</b>");
     });
 
     //multiple params func 2
@@ -191,12 +191,17 @@
 		  var var_8 = $("<i></i>").text(" just ");    // Create with jQuery
 		  var var_9 = document.createElement("b");   // Create with DOM
 		  var_9.innerHTML = "doesn't know it!";
-		  $("img").after(var_7, var_8, var_9);      // Insert new elements after img
+		  $("img:last").after(var_7, var_8, var_9);      // Insert new elements after img
 		}
 
 		//.before() method with multiple params
     $("#btn_8").click(function(){
       beforeText();
+    });
+
+    //.after() method with multiple params
+    $("#btn_9").click(function(){
+      afterText();
     });
 
 	}); //end doc ready
