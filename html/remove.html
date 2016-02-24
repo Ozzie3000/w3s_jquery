@@ -48,8 +48,8 @@
   	</li>
   	<li  id="boot_2">
   		<ol>
-  			<li>Remove me A</li>
-  			<li>Remove me B</li>
+  			<li>Remove me C</li>
+  			<li>Remove me D</li>
   		</ol>
   	</li>
   </ul>
@@ -65,6 +65,11 @@
 		//.remove()  - takes the whole thing
 		$("#btn_1").click(function(){
 			$("#boot_1").remove();
+		});
+
+		//.empty()  - leaves top structure
+		$("#btn_2").click(function(){
+			$("#boot_2").empty();
 		});
 
 	}); //end doc ready
