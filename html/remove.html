@@ -61,11 +61,11 @@
   	<li>
   		<button id="btn_3">Remove class gone</button>
   	</li>
-  	<li  id="boot_3">
-  		<ol>
+  	<li  >
+  		<ol id="boot_3">
   			<li>Remove me E</li>
-  			<li>Remove me F</li>
-  			<li>Remove me G</li>
+  			<li class="gone">Remove me F</li>
+  			<li class="gone">Remove me G</li>
   		</ol>
   	</li>
   </ul>
@@ -87,6 +87,11 @@
 		$("#btn_2").click(function(){
 			$("#boot_2").empty();
 		});
+
+    //.remove()  - with params
+    $("#btn_3").click(function(){
+      $("ol li").remove(".gone");
+    });
 
 	}); //end doc ready
 </script>
