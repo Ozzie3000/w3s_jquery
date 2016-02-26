@@ -15,6 +15,9 @@
   .cyany{
     color: cyan;
   }
+  #btn_3a, #btn_3b, #btn_3c{
+    margin-left: 15px;
+  }
 </style>
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -78,6 +81,7 @@
     <li>
       <button id="btn_3a">Toggle font weight</button>
       <button id="btn_3b">Toggle color</button>
+      <button id="btn_3c">Toggle both</button>
     </li>
     <li>
       <ol id="ole_3">
@@ -117,6 +121,11 @@
     //toggle font color
     $("#btn_3b").click(function(){
       $("#ole_3").children().toggleClass("cyany");
+    });
+
+    //toggle font weight and color
+     $("#btn_3c").click(function(){
+      $("#ole_3").children().toggleClass("boldness cyany");
     });
 
 	}); //end doc ready
