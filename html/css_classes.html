@@ -54,7 +54,18 @@
   </ul>
 
   <ul><span class="ul_tops">Removing classes with jQuery</span>
-  	<li></li>
+  	<li>Now we will remove a bold class</li>
+  	<li>
+  		<button id="btn_2">Remove class</button>
+  	</li>
+  	<li>
+  		<ol id="ole_2">
+  			<li class="boldness">Ichi</li>
+  			<li class="boldness">Ni</li>
+  			<li class="boldness">San</li>
+  			<li class="boldness">Yon</li>
+  		</ol>
+  	</li>
   </ul>
 
  
@@ -69,7 +80,7 @@
 		$("#btn_1").click(function(){
 			$("#ole_1").children().addClass("boldness");
 			alert("So bold!");
-		})
+		});
 
 	}); //end doc ready
 </script>
