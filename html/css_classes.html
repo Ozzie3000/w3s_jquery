@@ -9,7 +9,7 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
-	.boldy{
+	.boldness{
 		font-weight: bold;
 	}
 </style>
@@ -57,6 +57,11 @@
 
 
 	$(document).ready(function(){
+		//add boldness
+		$("#btn_1").click(function(){
+			$("#ole_1").children().addClass("boldness");
+			alert("So bold!");
+		})
 
 	}); //end doc ready
 </script>
