@@ -17,6 +17,12 @@
 	}
 	#ly_3{
 		background-color: blue;
+		color: red;
+	}
+	.bord{
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
 	}
 </style>
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
@@ -45,7 +51,7 @@
   	</li>
   	<li>
   		<ol id="ole_1">
-  			<li id="ly_1">Ichi</li>
+  			<li id="ly_1" class="bord">Ichi</li>
   			<li id="ly_2">Ni</li>
   			<li id="ly_3">San</li>
   			<li id="ly_4">Yon</li>
@@ -68,7 +74,7 @@
   	<li>Change background color</li>
   	<li>
   		<button id="btn_2a">Red Background color</button>
-  		<button id="btn_2b"> Background color</button>
+  		<button id="btn_2b">Blue Background color</button>
   		<button id="btn_2c"> Background color</button>
   		<button id="btn_2d"> Background color</button>
   	</li>
@@ -111,9 +117,20 @@
 		});
 
 		// ************************
-		//background color 1
+		//background color red
 		$("#btn_2a").click(function(){
 			$("#ly_9").css("background-color","red");
+		});
+
+		//background color white
+		$("#btn_2b").click(function(){
+			$("#ly_10").css("background-color","white");
+		});
+
+		//background color blue
+		$("#btn_2c").click(function(){
+			$("#ly_11").css("background-color","blue");
+			$("#ly_11").css("color","red");
 		});
 
 	}); //end doc ready
