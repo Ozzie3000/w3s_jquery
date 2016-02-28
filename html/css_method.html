@@ -67,7 +67,7 @@
   	<li>.css("property_name","value");</li>
   	<li>Change background color</li>
   	<li>
-  		<button id="btn_2a"> Background color</button>
+  		<button id="btn_2a">Red Background color</button>
   		<button id="btn_2b"> Background color</button>
   		<button id="btn_2c"> Background color</button>
   		<button id="btn_2d"> Background color</button>
@@ -108,6 +108,12 @@
 		//background color 4
 		$("#btn_1d").click(function(){
 			$("#ly_8").text($("#ly_4").css("background-color"));
+		});
+
+		// ************************
+		//background color 1
+		$("#btn_2a").click(function(){
+			$("#ly_9").css("background-color","red");
 		});
 
 	}); //end doc ready
