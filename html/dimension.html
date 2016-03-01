@@ -57,6 +57,9 @@
     <li>
       <div id="div_1"></div>
     </li>
+    <li>
+      <button id="btn_1">Box stats</button>
+    </li>
   </ul>
 
  
@@ -72,10 +75,19 @@
       var blue_box = $("#div_1");
       var wid = blue_box.width();
       var hei = blue_box.height();
+      var txt = "";
       console.log(wid + " " + hei);
+      txt += "Width of div: " + $("#div_1").width() + "</br>";
+      txt += "Height of div: " + $("#div_1").height();
+      $("#div_1").html(txt);
     }
 
+    /******  test
     blue_nums();
+    ******/
+
+    //show box measurements
+    $("#btn_1").click(blue_nums);
 
 	}); //end doc ready
 </script>
