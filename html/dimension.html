@@ -55,7 +55,7 @@
   <ul><span class="ul_tops">Show width and height</span>
   	<li>Remember we will only be wroking with the element itself</li>
     <li>
-      <div class="div_1"></div>
+      <div id="div_a" class="div_1"></div>
     </li>
     <li>
       <button id="btn_1">Box stats</button>
@@ -65,7 +65,7 @@
   <ul><span class="ul_tops">Show innerWidth() and innerHeight()</span>
     <li>Now we will capture the measures of the element plus padding</li>
     <li>
-      <div class="div_1"></div>
+      <div id="div_b" class="div_1"></div>
     </li>
     <li>
       <button id="btn_2">Box stats 2</button>
@@ -82,22 +82,37 @@
 	$(document).ready(function(){
     //messaurements for blue box
     function blue_nums(){
-      var blue_box = $("#div_1");
+      var blue_box = $(".div_1");
       var wid = blue_box.width();
       var hei = blue_box.height();
       var txt = "";
       console.log(wid + " " + hei);
-      txt += "Width of div: " + $("#div_1").width() + "</br>";
-      txt += "Height of div: " + $("#div_1").height();
-      $("#div_1").html(txt);
+      txt += "Width of div: " + $("#div_a").width() + "</br>";
+      txt += "Height of div: " + $("#div_b").height();
+      $("#div_a").html(txt);
     }
 
     /******  test
     blue_nums();
     ******/
 
+    //inner stats
+    function blue_nums2(){
+      var blue_box = $(".div_1");
+      var wid = blue_box.innerWidth();
+      var hei = blue_box.innerHeight();
+      var txt = "";
+      console.log(wid + " " + hei);
+      txt += "innerWidth of div: " + wid + "</br>";
+      txt += "innerHeight of div: " + hei;
+      $("#div_b").html(txt);
+    }
+
     //show box measurements
     $("#btn_1").click(blue_nums);
+
+    //show inner measurements
+    $("#btn_2").click(blue_nums2);
 
 	}); //end doc ready
 </script>
