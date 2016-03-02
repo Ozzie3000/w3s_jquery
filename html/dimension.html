@@ -118,6 +118,18 @@
       $("#div_b").html(txt);
     }
 
+    //outer stats
+    function blue_nums3(){
+      var blue_box = $(".div_1");
+      var wid = blue_box.outerWidth();
+      var hei = blue_box.outerHeight();
+      var txt = "";
+      console.log(wid + " " + hei);
+      txt += "outerWidth of div: " + wid + "</br>";
+      txt += "outerHeight of div: " + hei;
+      $("#div_c").html(txt);
+    }
+
     //show box measurements
     $("#btn_1").click(blue_nums);
 
