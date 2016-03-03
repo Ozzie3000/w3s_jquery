@@ -96,7 +96,7 @@
   <ul><span class="ul_tops">Set dimensions</span>
     <li>Now we will the dimensions to something else</li>
     <li>
-      <div id="div_d" class="div_1"></div>
+      <div id="div_e" class="div_1"></div>
     </li>
     <li>
       <button id="btn_4">Box size 200 x 600</button>
@@ -161,6 +161,11 @@
       txt += "outerWidth(true) of div: " + wid + "</br>";
       txt += "outerHeight(true) of div: " + hei;
       $("#div_d").html(txt);
+    }
+
+    //set dimensions to 200 h  x 600 w
+    function resize_me(){
+      $("#div_e").height(200).width(600);
     }
 
     //show box measurements
