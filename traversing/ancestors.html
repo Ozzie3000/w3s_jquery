@@ -14,6 +14,13 @@
 		padding: 10px;
 		border: solid black 2px;
 	}
+  .ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
 </style>
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -23,7 +30,7 @@
 	}); //end doc ready
 </script>
 </head>
-<body>
+<body class="ancesters">
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
 	<br /><br />
   <h1>JS and jQuery | Ancestors</h1>
@@ -44,9 +51,9 @@
   <ul><span class="ul_tops">.parent() method</span>
   	<li>.parent() returns on level up from the selection</li>
   	<li>
-  		<div class="spacer_1">Great-grandparent
-  			<div class="spacer_1">Grandparent
-  				<div class="spacer_1">Parent
+  		<div id="target_4" class="spacer_1">Great-grandparent
+  			<div id="target_3" class="spacer_1">Grandparent
+  				<div id="target_2" class="spacer_1">Parent
   					<div id="target_1" class="spacer_1">Target
   						<span class="spacer_1 last_one">Child</span>
   					</div>
@@ -76,6 +83,9 @@
 				"border":"solid red 3px"
 			});
 		});
+
+    //parents with param
+    $("span").parents("#target_3").css("color","red");
 
 	}); //end doc ready
 </script>
