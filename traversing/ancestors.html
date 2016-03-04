@@ -51,15 +51,17 @@
   <ul><span class="ul_tops">.parent() method</span>
   	<li>.parent() returns on level up from the selection</li>
   	<li>
-  		<div id="target_4" class="ancestors spacer_1">Great-grandparent
-  			<div id="target_3" class="spacer_1">Grandparent
-  				<div id="target_2" class="spacer_1">Parent
-  					<div id="target_1" class="spacer_1">Target
-  						<span class="spacer_1 last_one">Child</span>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
+      <div class="ancestors">
+    		<div id="target_4" class="spacer_1">Great-grandparent
+    			<div id="target_3" class="spacer_1">Grandparent
+    				<div id="target_2" class="spacer_1">Parent
+    					<div id="target_1" class="spacer_1">Target
+    						<span class="spacer_1 last_one">Child</span>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+      </div>
   	</li>
   	<li>Now we will search for target, get it's parent and change the background color</li>
   	<li>
@@ -89,7 +91,9 @@
 		});
 
     //parents with param
-    $("span").parents("#target_3").css("color","red");
+    $("#btn_2").click(function(){
+      $("span").parents("#target_3").css("color","red");
+    });
 
 	}); //end doc ready
 </script>
