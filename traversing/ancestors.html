@@ -47,7 +47,7 @@
   		<div class="spacer_1">Great-grandparent
   			<div class="spacer_1">Grandparent
   				<div class="spacer_1">Parent
-  					<div class="spacer_1">Target
+  					<div id="target_1" class="spacer_1">Target
   						<span class="spacer_1 last_one">Child</span>
   					</div>
   				</div>
@@ -68,6 +68,14 @@
 
 
 	$(document).ready(function(){
+
+		//target bgColor
+		$("#btn_1").click(function(){
+			$("#target_1").parent().css({
+				"padding":"15px",
+				"border":"solid red 3px"
+			});
+		});
 
 	}); //end doc ready
 </script>
