@@ -80,6 +80,9 @@
     <li>
       <button id="btn_3">parentsUntil target 4</button>
     </li>
+    <li id="memo">
+      &nbsp;
+    </li>
   </ul>
 
  
@@ -103,6 +106,14 @@
     $("#btn_2").click(function(){
       $("span").parents("#target_3").css("color","red");
     });
+
+    //parentUntil target 4
+    //this will actually relocate the elements
+    $("#btn_3").click(function(){
+      var selection = $("#target_0").parentsUntil("#target_4");
+      $("#memo").html(selection);
+    });
+    
 
 	}); //end doc ready
 </script>
