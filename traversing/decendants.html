@@ -9,7 +9,15 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<style type="text/css"></style>
+<style type="text/css">
+  .ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+</style>
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -36,7 +44,21 @@
   </ul>
 
   <ul><span class="ul_tops">Traversing with .children() method</span>
+    <li>
+      <div class="ancestors">
+        <div id="target_4" class="placeholder_1">Great-grandparent
+          <div id="target_3" class="placeholder_1">Grandparent
+            <div id="target_2" class="placeholder_1">Parent
+              <div id="target_1" class="placeholder_1">Target
+                <span id="target_0" class="placeholder_1 last_one">Child</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   	<li>This will return all direct descendants of selection</li>
+    <li>Be mindful it will only go down one level</li>
+    <li>Lets target the top level and work down</li>
   </ul>
 
  
