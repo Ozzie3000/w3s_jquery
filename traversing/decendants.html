@@ -60,7 +60,7 @@
     <li>Be mindful it will only go down one level</li>
     <li>Lets target the top level and work down</li>
     <li>
-      <button id="btn_1" class="clicker" value="target_1">Child of great-grandparent</button>
+      <button id="btn_1" class="clicker" value="target_4">Child of great-grandparent</button>
     </li>
   </ul>
 
@@ -76,16 +76,21 @@
 
     //onclick function
     function buttonClicker(){
-      var buttonId = this.val();
-      $(buttonId).click(function(){
+      //var buttonId = $(this).val();
+     // alert(buttonId);
+     // $(buttonId).click(function(){
         $(this).children().css("color","blue");
-      });
+      //});
     }
 
     $(".clicker").click(function(){
       //buttonClicker();
-      //console.log(this);
-      console.log(function(){ return this.val(); });
+      var buttonId = $(this).val();
+      //alert(buttonId);
+     // return buttonId;
+     buttonId = "#" + buttonId;
+     console.log(buttonId);
+     $(buttonId).children().css("color","blue");
     });
 
 	}); //end doc ready
