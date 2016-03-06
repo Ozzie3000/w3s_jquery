@@ -78,7 +78,10 @@
     <li>Lets use uls above</li>
     <li>We will start at the top and work down</li>
     <li>
-      <button id="btn_5" class="placeholder_1" value="target_x">Top Div</button>
+      <button id="btn_5" class="placeholder_1" value="target_x">Top ul first child</button>
+    </li>
+    <li>
+      <button id="btn_6" class="placeholder_1" value="target_x">2nd ul second child</button>
     </li>
   </ul>
 
@@ -111,9 +114,17 @@
      $(buttonId).children().css("color","blue");
     });
 
-    //first div in example
+    //first ul in example
     $("#btn_5").click(function(){
       $("ul").children("li:first").css({
+        "background-color":"cyan",
+        "font-weight":"900"
+      });
+    });
+
+    //second ul in example
+    $("#btn_6").click(function(){
+      $("ul").eq(1).children("li").eq(1).css({
         "background-color":"cyan",
         "font-weight":"900"
       });
