@@ -130,6 +130,14 @@
       var selection = $("#target_0").parentsUntil("#target_4");
       $("#memo").html(selection);
     });
+
+    //find target_3
+    $("#btn_5").click(function(){
+      $(".ancestors").find("#target_3").css({
+        "color":"cyan",
+        "font-weight":"9000"
+      });
+    });
     
 
 	}); //end doc ready
