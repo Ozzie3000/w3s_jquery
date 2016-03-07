@@ -96,6 +96,10 @@
     <li>
       <button id="btn_8">Find target 3</button>
     </li>
+    <li>Example 2 find all descendants</li>
+    <li>
+      <button id="btn_9">Find those children</button>
+    </li>
   </ul>
 
  
@@ -152,10 +156,20 @@
     });
 
     //find method on target_3
-    $("#btn_5").click(function(){
+    $("#btn_8").click(function(){
       $(".ancestors").find("#target_3").css({
         "color":"cyan",
-        "font-weight":"9000"
+        "font-weight":"900",
+        "font-family":"Oswald"
+      });
+    });
+
+    //find method on all children
+    $("#btn_9").click(function(){
+      $(".ancestors").find("*").css({
+        "color":"teal",
+        "font-weight":"900",
+        "font-family":"Georgia"
       });
     });
 
