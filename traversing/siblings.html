@@ -52,12 +52,12 @@
     <li>
       <button id="btn_2">Odd siblings</button>
     </li>
+    <li id="target_2"></li>
     <li>Grab the evens</li>
-    <li></li>
     <li>
       <button id="btn_3">Evens siblings</button>
     </li>
-    <li></li>
+    <li id="target_3"></li>
   </ul>
 
  
@@ -76,6 +76,12 @@
 				"font-family":"Georgia"
 			});
 		});
+
+    //odds
+    $("#btn_2").click(function(){
+      var odds = $("ol li.odd").text();
+      $("#target_2").text(odds);
+    });
 
 	}); //end doc ready
 </script>
