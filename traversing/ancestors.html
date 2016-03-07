@@ -92,16 +92,6 @@
     </li>
   </ul>
 
-  <ul><span class="ul_tops">The .find() method</span>
-    <li>Used on a selection; it will return all descendants</li>
-    <li>You can use filters to narrow your search</li>
-    <li>Or you can use an asterik to return all</li>
-    <li>Example 1 specific find</li>
-    <li>
-      <button id="btn_5">Find target 3</button>
-    </li>
-  </ul>
-
  
 
 <br><br><br>
@@ -129,14 +119,6 @@
     $("#btn_3").click(function(){
       var selection = $("#target_0").parentsUntil("#target_4");
       $("#memo").html(selection);
-    });
-
-    //find target_3
-    $("#btn_5").click(function(){
-      $(".ancestors").find("#target_3").css({
-        "color":"cyan",
-        "font-weight":"9000"
-      });
     });
     
 
