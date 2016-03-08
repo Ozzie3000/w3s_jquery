@@ -64,7 +64,7 @@
     <li>Used to return the the next adjacent element of your selection</li>
     <li>We will target .nextAll() again then jump to the next one</li>
     <li>
-      <button id="btn_3">After nextAll ?</button>
+      <button id="btn_4">After nextAll ?</button>
     </li>
   </ul>
 
@@ -95,6 +95,15 @@
     $("#btn_3").click(function(){
       var evens = $("ol li.even").text();
       $("#target_3").text(evens);
+    });
+
+    //next one up
+    $("#btn_4").click(function(){
+      $("ol li").eq(2).next().css({
+        "color":"red",
+        "font-family":"sans-serif",
+        "font-size":"24px"
+      });
     });
 
 	}); //end doc ready
