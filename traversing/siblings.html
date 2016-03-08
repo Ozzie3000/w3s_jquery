@@ -130,6 +130,16 @@
       });
     });
 
+    //nextUntil just give me the remainding slackers until I reach x
+    $("#btn_6").click(function(){
+      $("ol li").eq(1).nextUntil("#roku").css({
+        "color":"DeepSkyBlue",
+        "font-family":"sans-serif",
+        "font-weight":"900"
+        "font-size":"24px"
+      });
+    });
+
 	}); //end doc ready
 </script>
 </body>
