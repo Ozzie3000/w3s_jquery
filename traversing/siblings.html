@@ -187,7 +187,13 @@
     $("#btn_8").click(function(){
       var upAll = $("#go").prevAll().text();
       $("#target_8").text(upAll);
-    })
+    });
+
+    //prevUntil() method
+    $("#btn_9").click(function(){
+      var upSome = $("#go").prevUntil("#ni").text();
+      $("#target_9").text(upSome);
+    });
 
 	}); //end doc ready
 </script>
