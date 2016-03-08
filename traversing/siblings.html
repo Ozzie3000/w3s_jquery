@@ -81,6 +81,10 @@
     <li>You will need to parameters</li>
     <li>The first parameter is for your selection</li>
     <li>The second parameter is where it should stop to make a match</li>
+    <li>It stops when the match is made and does not return your match</li>
+    <li>
+      <button id="btn_6">nextUntil param</button>
+    </li>
   </ul>
 
  
@@ -135,7 +139,7 @@
       $("ol li").eq(1).nextUntil("#roku").css({
         "color":"DeepSkyBlue",
         "font-family":"sans-serif",
-        "font-weight":"900"
+        "font-weight":"900",
         "font-size":"24px"
       });
     });
