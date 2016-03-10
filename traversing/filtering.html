@@ -87,6 +87,12 @@
 			$("#target_2").text(second_li);
 		});
 
+		//last li in the ol
+		$("#btn_3").click(function(){
+			var last_li = $("ol li").last().text();
+			$("#target_3").text(last_li);
+		});
+
 	}); //end doc ready
 </script>
 </body>
