@@ -27,7 +27,7 @@
   	<li>How do you solve of the problem of updating information on a web page without constantly downloading the whole thing?</li>
   	<li>If you can only reload content that is needed and not the rest would this be better?</li>
   	<li>Meet AJAX: Asynchronous JavaScript and XML</li>
-  	<li></li>
+  	<li>It is used to load data in the background to then load content on a webpage without reloading the whole thing</li>
   </ul>
 
  
@@ -38,6 +38,10 @@
 
 
 	$(document).ready(function(){
+		//load text
+		$("#btn_1").click(function(){
+			$("#target_1").load("ajax_1.txt");
+		});
 
 	}); //end doc ready
 </script>
