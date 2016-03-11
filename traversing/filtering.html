@@ -163,6 +163,12 @@
 			$("#target_7").text(odd_ones);
 		});
 
+		//not odd class
+		$("#btn_8").click(function(){
+			var even_ones = $("ol li").not(".odd").text();
+			$("#target_8").text(even_ones);
+		});
+
 	}); //end doc ready
 </script>
 </body>
