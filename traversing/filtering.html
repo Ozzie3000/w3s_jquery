@@ -97,6 +97,10 @@
   	</li>
   </ul>
 
+  <ul><span class="ul_tops">.not() method</span>
+  	<li>Like filter but returns what doesn't match</li>
+  </ul>
+
  
 
 <br><br><br>
@@ -138,7 +142,7 @@
 		//odd class
 		$("#btn_6").click(function(){
 			var odd_ones = $("ol li").filter(".odd").text();
-			$("#target_6").text(even_ones);
+			$("#target_6").text(odd_ones);
 		});
 
 	}); //end doc ready
