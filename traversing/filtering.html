@@ -151,6 +151,12 @@
 			$("#target_6").text(odd_ones);
 		});
 
+		//not even class
+		$("#btn_7").click(function(){
+			var odd_ones = $("ol li").not(".even").text();
+			$("#target_7").text(odd_ones);
+		});
+
 	}); //end doc ready
 </script>
 </body>
