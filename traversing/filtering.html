@@ -89,6 +89,12 @@
   	<li>
   		<span id="target_5"></span>
   	</li>
+  	<li>
+  		<button id="btn_6">Odd</button>
+  	</li>
+  	<li>
+  		<span id="target_6"></span>
+  	</li>
   </ul>
 
  
@@ -121,6 +127,12 @@
 		$("#btn_4").click(function(){
 			var eq_3 = $("ol li").eq(3).text();
 			$("#target_4").text(eq_3);
+		});
+
+		//even class
+		$("#btn_5").click(function(){
+			var even_ones = $("ol li").filter(".even").text();
+			$("#target_5").text(even_ones);
 		});
 
 	}); //end doc ready
