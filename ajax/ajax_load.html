@@ -64,6 +64,16 @@
 
 	$(document).ready(function(){
 
+	//success or error message
+		$("#btn_1").click(function(){
+      $("#div_1").load("External_file", function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success")
+            alert("External content loaded successfully!" + " " + responseTxt);
+        if(statusTxt == "error")
+            alert("Error: " + xhr.status + ": " + xhr.statusText);
+      });
+    });
+
 	}); //end doc ready
 </script>
 </body>
