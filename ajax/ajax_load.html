@@ -92,6 +92,16 @@
       });
     });
 
+    //success or error message
+		$("#btn_2").click(function(){
+      $("#div_2").load("http://ozzie3000.github.io./parallax_2.html h1", function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success")
+            alert("External content loaded successfully!" + " " + responseTxt);
+        if(statusTxt == "error")
+            alert("Error: " + xhr.status + ": " + xhr.statusText);
+      });
+    });
+
 	}); //end doc ready
 </script>
 </body>
