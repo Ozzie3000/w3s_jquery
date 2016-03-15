@@ -57,6 +57,7 @@
       $.post(URL, data, callback);
     </li>
     <li>The URL paramter is required</li>
+    <li>data is optional; it is some information to send along with your call</li>
     <li>The callback parameter is optional. It gets executed once the request is not processing</li>
   </ul>
 
@@ -71,6 +72,18 @@
     //jQuery get with callback
     $("#btn_1").click(function(){
       $.get("http://ozzie3000.github.io./parallax_2.html", function(data, status){
+          alert("Data: " + data + "\nStatus: " + status);
+      });
+    });
+
+    //jQuery post URL, data, callback
+    $("button").click(function(){
+      $.post("some_url",
+      {
+        key1: "value1",
+        key2: "value2"
+      },
+      function(data,status){
           alert("Data: " + data + "\nStatus: " + status);
       });
     });
