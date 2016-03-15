@@ -43,6 +43,10 @@
     </li>
     <li>The URL paramter is required</li>
     <li>The callback parameter is optional. It gets executed once the request is not processing</li>
+    <li>Make a get request below</li>
+    <li>
+      <button id="btn_1">GET</button>
+    </li>
   </ul>
 
  
@@ -55,7 +59,7 @@
 	$(document).ready(function(){
     //jQuery get with callback
     $("#btn_1").click(function(){
-      $.get("http://ozzie3000.github.io./parallax_2.html h1", function(data, status){
+      $.get("http://ozzie3000.github.io./parallax_2.html", function(data, status){
           alert("Data: " + data + "\nStatus: " + status);
       });
     });
