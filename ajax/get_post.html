@@ -59,6 +59,10 @@
     <li>The URL paramter is required</li>
     <li>data is optional; it is some information to send along with your call</li>
     <li>The callback parameter is optional. It gets executed once the request is not processing</li>
+    <li>Make a post request</li>
+    <li>
+      <button id="btn_2">POST</button>
+    </li>
   </ul>
 
  
@@ -77,7 +81,7 @@
     });
 
     //jQuery post URL, data, callback
-    $("button").click(function(){
+    $("#btn_2").click(function(){
       $.post("some_url",
       {
         key1: "value1",
