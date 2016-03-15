@@ -44,7 +44,14 @@
 	//document.getElementById("").
 
 
+
+
+	//noConflict starter
+	$.noConflict();
 	$(document).ready(function(){
+		jQuery("#btn_1").click(function(){
+        jQuery("target_1").text("jQuery is still working! <br> Yes? No? <br> If you see this than YES");
+    });
 
 	}); //end doc ready
 </script>
