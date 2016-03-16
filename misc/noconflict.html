@@ -64,7 +64,18 @@
         jQuery("#target_1").text("jQuery is still working! Yes? No? If you see this than YES");
     });
 
+
+
 	}); //end doc ready
+
+  //your own shortcut
+    var jack = $.noConflict();
+    jack(document).ready(function(){
+      jack("#btn_2").click(function(){
+        jack("#target_2").text("My own shortcut!!!!");
+      });
+    });
+
 </script>
 </body>
 </html>
