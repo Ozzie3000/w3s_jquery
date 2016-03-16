@@ -47,6 +47,12 @@
     <li>Make your own shortcut</li>
     <li>Make a variable and store the noConflict in it</li>
     <li>Test it below</li>
+    <li>
+      <button id="btn_2">Test noConflict</button>
+    </li>
+    <li>
+      <span id="target_2"></span>
+    </li>
   </ul>
 
 
@@ -60,7 +66,7 @@
 
 
 	//noConflict starter
-	$.noConflict();
+	jQuery.noConflict();
 	jQuery(document).ready(function(){
 		jQuery("#btn_1").click(function(){
         jQuery("#target_1").text("jQuery is still working! Yes? No? If you see this than YES");
@@ -71,7 +77,7 @@
 	}); //end doc ready
 
   //your own shortcut
-    var jack = $.noConflict();
+    var jack = jQuery.noConflict();
     jack(document).ready(function(){
       jack("#btn_2").click(function(){
         jack("#target_2").text("My own shortcut!!!!");
