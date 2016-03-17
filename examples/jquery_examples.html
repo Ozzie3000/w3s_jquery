@@ -43,7 +43,7 @@
   </ul>
 
   <ul><span class="ul_tops">Hide and seek</span>
-    <li></li>
+    <li>Hide this button by clicking on it----&gt; <button id="btn_1">Hide me</button></li>
   </ul>
 
  
@@ -54,6 +54,11 @@
 
 
 	$(document).ready(function(){
+    //hide the button
+    $("#btn_1").click(function(){
+      $(this).hide();
+      //using this for speed
+    });
 
 	}); //end doc ready
 </script>
