@@ -46,6 +46,7 @@
     <li>Hide this button by clicking on it----&gt; <button id="btn_1">Hide me</button></li>
     <li>Show the button above if it is hidden <button id="btn_2">Show</button></li>
     <li>Toggle the first button either way <button id="btn_3">Toggle</button></li>
+    <li>Hide everything <button id="btn_4">Hide it all</button></li>
   </ul>
 
  
@@ -70,6 +71,11 @@
     //toggle first button
     $("#btn_3").click(function(){
       $("#btn_1").toggle();
+    });
+
+    //hide the whole thing
+    $("#btn_4").click(function(){
+      $(this).parents("ul").hide();
     });
 
 	}); //end doc ready
