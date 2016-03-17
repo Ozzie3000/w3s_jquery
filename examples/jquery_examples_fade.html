@@ -13,7 +13,7 @@
 	.boxy_1{
 		width:100px;
 		height:100px;
-		/*display:none; */
+		display:none; 
 	}
 	#div_1{
 		background-color: red;
@@ -39,8 +39,11 @@
 	<br /><br />
   <h1>JS and jQuery | fade</h1>
 
-  <ul><span class="ul_tops"></span>
-  	<li></li>
+  <ul><span class="ul_tops">.fadeIn()</span>
+  	<li>Let's fade in some boxes below</li>
+  	<li>
+	  	<button id="btn_1">fadeIn</button>
+	  </li>
   </ul>
 
   <div id="div_1" class="boxy_1"></div>
@@ -57,6 +60,11 @@
 
 
 	$(document).ready(function(){
+
+		//fadeIn some boxes
+		$("#btn_1").click(function(){
+			$(".boxy_1").fadeIn(3000);
+		});
 
 	}); //end doc ready
 </script>
