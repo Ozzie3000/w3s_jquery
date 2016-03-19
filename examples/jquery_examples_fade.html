@@ -60,9 +60,9 @@
 	</ul>
 
 	<ul><span class="ul_tops">.fadeToggle</span>
-		<li>Let's fadeToggle these boxes below</li>
+		<li>Let's fadeToggle these boxes above</li>
 		<li>
-	  	<button id="btn_2">fadeToggle</button>
+	  	<button id="btn_3">fadeToggle</button>
 	  </li>
 	</ul>
 
@@ -77,12 +77,17 @@
 
 		//fadeIn some boxes
 		$("#btn_1").click(function(){
-			$(".boxy_1").fadeIn(3000);
+			$(".boxy_1").fadeIn(2000);
 		});
 
 		//fadeOut some boxes
 		$("#btn_2").click(function(){
-			$(".boxy_1").fadeOut(3000);
+			$(".boxy_1").fadeOut(2000);
+		});
+
+		//fadeToggle some boxes
+		$("#btn_3").click(function(){
+			$(".boxy_1").fadeToggle(2000);
 		});
 
 	}); //end doc ready
