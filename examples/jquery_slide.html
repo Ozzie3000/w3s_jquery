@@ -59,6 +59,11 @@
   	<li>This method hides or reveals something by sliding up or sliding down the element</li>
   </ul>
 
+  <div id="click_3" class="clicked_1">Click to slide toggle</div>
+	<div id="panel_3" class="panels">The world!</div>
+
+	<br>
+
  
 
 <br><br><br>
@@ -75,6 +80,11 @@
 		//slideUp
 		$("#click_2").click(function(){
 			$("#panel_2").slideUp(1000);
+		});
+
+		//slideToggle
+		$("#click_3").click(function(){
+			$("#panel_3").slideToggle(1000);
 		});
 
 	}); //end doc ready
