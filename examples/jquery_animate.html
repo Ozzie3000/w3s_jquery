@@ -36,7 +36,7 @@
   	<li>absolute, fixed, relative</li>
   </ul>
 
-  <div class="boxy_1"></div>
+  <div id="box_1" class="boxy_1"></div>
 
  
 
@@ -46,6 +46,10 @@
 
 
 	$(document).ready(function(){
+		//animate
+		$("#btn_1").click(function(){
+			$("#box_1").animate({left: "333px"});
+		});
 
 	}); //end doc ready
 </script>
