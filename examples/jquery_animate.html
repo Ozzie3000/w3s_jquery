@@ -37,6 +37,9 @@
   	<li>
   		<button id="btn_1">animate to the right</button>
   	</li>
+  	<li>
+  		<button id="btn_2">animate to the left</button>
+  	</li>
   </ul>
 
   <div id="box_1" class="boxy_1"></div>
@@ -49,9 +52,14 @@
 
 
 	$(document).ready(function(){
-		//animate
+		//animate: move to the right
 		$("#btn_1").click(function(){
 			$("#box_1").animate({left: "333px"});
+		});
+
+		//animate:  move to the left
+		$("#btn_2").click(function(){
+			$("#box_1").animate({left: "0px"});
 		});
 
 	}); //end doc ready
