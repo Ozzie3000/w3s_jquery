@@ -10,14 +10,16 @@
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <style type="text/css">
-	#click_1, #panel_1{
+	.clicked_1, .panels{
 		padding: 5px;
 		text-align: center;
 		background-color: #00BFFF;
 		border: solid 2px DimGray;
 	}
-	#panel_1{
+	.panels{
 		padding: 50px;
+	}
+	#panel_1{
 		display: none;
 	}
 </style>
@@ -35,18 +37,21 @@
   <h1>JS and jQuery | slide
   </h1>
 
-  <ul><span class="ul_tops">.slideDown()</span>
+  <ul><span class="ul_tops">.slideDown();</span>
   	<li>This method reveals something by starting at the top</li>
   </ul>
 
-  <div id="click_1">Click to slide down panel</div>
-	<div id="panel_1">Hello world!</div>
+  <div id="click_1" class="clicked_1">Click to slide down panel</div>
+	<div id="panel_1" class="panels">Hello world!</div>
 
 	<br>
 
 	<ul><span class="ul_tops">.slideUp();</span>
   	<li>This method hides somethign by starting at the bottom</li>
   </ul>
+
+  <div id="click_2" class="clicked_1">Click to slide up panel</div>
+	<div id="panel_2" class="panels">Bye world!</div>
 
  
 
