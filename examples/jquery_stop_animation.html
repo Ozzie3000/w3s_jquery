@@ -34,6 +34,7 @@
   	<li>You can stop an animation in mid progress</li>
   	<li>If it has executed then it does not make sense to stop it</li>
   	<li>The .stop() method can be used to achieve this</li>
+  	<li>Stop the animation <button id="btn_1">STOP</button></li>
   </ul>
 
   <div id="box_1" class="boxy_1">Click me to start</div>
@@ -47,6 +48,11 @@
 
 
 	$(document).ready(function(){
+
+	//put a stop to that
+		$("#btn_1").click(function(){
+			$("#box_1").stop();
+		});
 
 	}); //end doc ready
 </script>
