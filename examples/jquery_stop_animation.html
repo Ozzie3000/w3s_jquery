@@ -66,9 +66,15 @@
 		/**** start and stop with parameters  ***/
 		//start
 		$("#start").click(function(){
-        $("box_2").animate({left: '333px'}, 5000);
-        $("box_2").animate({fontSize: '3em'}, 5000);
+        $("#box_2").animate({left: '333px'}, 5000);
+        $("#box_2").animate({fontSize: '3em'}, 5000);
     });
+
+    //stop
+    $("#stop").click(function(){
+        $("#box_2").stop();
+    });
+
 
 	}); //end doc ready
 </script>
