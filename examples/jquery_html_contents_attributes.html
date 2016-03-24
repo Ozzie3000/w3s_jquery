@@ -29,9 +29,13 @@
   	<li>.text() - gives us the stuff inside that you see as readable text</li>
   	<li id="example_1"><b>Example 1</b></li>
   	<li>
-  		<button id="btn_1">Grab above and put below</button>
+  		<button id="btn_1">Grab example 1 and put below</button>
   	</li>
   	<li id="target_1"></li>
+  	<li>
+  		<button id="btn_2">Grab example 1 and put below</button>
+  	</li>
+  	<li id="target_2"></li>
   </ul>
 
  
@@ -53,7 +57,7 @@
 		$("#btn_2").click(function(){
 			var content = $("#example_1").html();
 			$("#target_2").text(content);
-			alert("content");
+			alert(content);
 		});
 
 	}); //end doc ready
