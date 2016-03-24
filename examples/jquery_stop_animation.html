@@ -17,7 +17,7 @@
 		background: DeepSkyBlue;
 	}
 	#box_2{
-		height: 200px;
+		height: 100px;
 	}
 </style>
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
@@ -79,23 +79,24 @@
 		/**** start and stop with parameters  ***/
 		//start
 		$("#start").click(function(){
-        $("#box_2").animate({left: '333px'}, 5000);
-        $("#box_2").animate({fontSize: '3em'}, 5000);
+      $("#box_2").animate({left: '333px'}, 3000);
+      $("#box_2").animate({width: '400px'}, 3000);
+      $("#box_2").animate({fontSize: '3em'}, 3000);
     });
 
     //stop
     $("#stop").click(function(){
-        $("#box_2").stop();
+       $("#box_2").stop();
     });
 
 		//stop all
     $("#stopAll").click(function(){
-        $("#box_2").stop(true);
+      $("#box_2").stop(true);
     });
 
     //stop and skip to the end
     $("#stopFinish").click(function(){
-        $("#box_2").stop(true, true);
+      $("#box_2").stop(true, true);
     });
 
 
