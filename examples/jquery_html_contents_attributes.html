@@ -52,7 +52,9 @@
   <ul><span class="ul_tops">.attr() method</span>
   	<li>Need to find an attribute for an element</li>
   	<li>.attr("attribute_name");</li>
-  	<li><a id="anc_1" href="https://www.amazon.com" target="_blank"></a></li>
+  	<li>
+	  	<a id="example_4" href="https://www.amazon.com" target="_blank">Amazon</a>
+	  </li>
   	<li>
   		<button id="btn_4">Grab example and put below</button>
   	</li>
@@ -85,6 +87,13 @@
 		$("#btn_3").click(function(){
 			var content = $("#example_3").val();
 			$("#target_3").text(content);
+			alert(content);
+		});
+
+		//.attr() method
+		$("#btn_4").click(function(){
+			var content = $("#example_4").attr("href");
+			$("#target_4").text(content);
 			alert(content);
 		});
 
