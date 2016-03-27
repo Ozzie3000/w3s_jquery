@@ -86,6 +86,13 @@
 			$("#target_3").val("Well there it went...");
 		});
 
+		//.text(function())
+		$("#btn_4").click(function(){
+			$("#target_4").text(function(i, content){
+				return content + ", test " + i;
+			});
+		});
+
 
 	}); //end doc ready
 </script>
