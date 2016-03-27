@@ -67,6 +67,10 @@
 
   <ul><span class="ul_tops">.html() set with a callback function</span>
   	<li></li>
+  	<li id="target_5">test</li>
+  	<li>
+  		<button id="btn_5">Change text above</button>
+  	</li>
   </ul>
 
  
@@ -96,6 +100,13 @@
 		$("#btn_4").click(function(){
 			$("#target_4").text(function(i, content){
 				return content + ", test " + i;
+			});
+		});
+
+		//.html(function())
+		$("#btn_5").click(function(){
+			$("#target_5").html(function(i, content){
+				return content + ", <b>test</b> " + i;
 			});
 		});
 
