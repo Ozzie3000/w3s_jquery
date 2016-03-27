@@ -78,10 +78,10 @@
   </ul>
 
   <ul><span class="ul_tops">Change an attr value</span>
-  	<li>The anchor below has a href value of https://wwww.yahoo.com</li>
+  	<li>The anchor below has a href value of https://www.startpage.com</li>
   	<li>You will change it with a click</li>
   	<li>
-  		<a href="https://www.yahoo.com" id="target_6">Yahoo</a>
+  		<a href="https://www.startpage.com" id="target_6" target="_blank">startpage</a>
   	</li>
   	<li>
   		<button id="btn_6">Change link</button>
@@ -123,6 +123,11 @@
 			$("#target_5").html(function(i, content){
 				return content + ", <b>test</b> " + i;
 			});
+		});
+
+		//.attr change value
+		$("#btn_6").click(function(){
+			$("#target_6").attr("href", "https://www.amazon.com");
 		});
 
 
