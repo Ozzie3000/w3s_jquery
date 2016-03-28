@@ -112,6 +112,13 @@
 
   <ul><span class="ul_tops">Change attr with a callback function</span>
   	<li>In addition to passing a string you can also use a function</li>
+  	<li>You will change the target attribute with a click</li>
+  	<li>
+  		<a href="https://www.amazon.com" id="target_10" target="_blank">amazon</a>
+  	</li>
+  	<li>
+  		<button id="btn_10">Change link</button>
+  	</li>
   </ul>
 
  
@@ -172,6 +179,13 @@
 				"target":"_top",
 				"href":"https://www.amazon.com",
 				"class":"big_style"
+			});
+		});
+
+		//.attr(function())
+		$("#btn_10").click(function(){
+			$("#target_10").attr("href", function(i, content){
+				return content + "/gp/goldbox" ;
 			});
 		});
 
