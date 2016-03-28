@@ -128,7 +128,10 @@
   		<a href="https://www.amazon.com" id="target_11" target="_blank">amazon</a>
   	</li>
   	<li>
-  		<button id="btn_11">Change link</button>
+  		<button id="btn_11">Multi Change 1</button>
+  	</li>
+  	<li>
+  		<button id="btn_12">Multi Change 2</button>
   	</li>
   </ul>
 
@@ -196,7 +199,7 @@
 		//.attr(function())
 		$("#btn_10").click(function(){
 			$("#target_10").attr("href", function(i, content){
-				return content + "/gp/goldbox" ;
+				return content + "/gp/goldbox";
 			});
 		});
 
@@ -211,6 +214,14 @@
 		function bob(i, content){
 			return content + "/gp/goldbox";
 		}
+
+		//.attr(function()) multi
+		$("#btn_12").click(function(){
+			$("#target_11").attr({
+				"href":function(i, content){ return content + "/gp/goldbox"; },
+				"class":"big_style"
+			});
+		});
 
 
 	}); //end doc ready
