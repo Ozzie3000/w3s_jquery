@@ -121,6 +121,17 @@
   	</li>
   </ul>
 
+  <ul><span class="ul_tops">Multi Change attr with a callback function</span>
+  	<li>In addition to passing a string you can also use a function</li>
+  	<li>You will change the target attribute with a click</li>
+  	<li>
+  		<a href="https://www.amazon.com" id="target_11" target="_blank">amazon</a>
+  	</li>
+  	<li>
+  		<button id="btn_11">Change link</button>
+  	</li>
+  </ul>
+
  
 
 <br><br><br>
@@ -188,6 +199,18 @@
 				return content + "/gp/goldbox" ;
 			});
 		});
+
+		//.attr(function()) multi
+		$("#btn_11").click(function(){
+			$("#target_11").attr({
+				"href":bob,
+				"class":"big_style"
+			});
+		});
+
+		function bob(i, content){
+			return content + "/gp/goldbox";
+		}
 
 
 	}); //end doc ready
