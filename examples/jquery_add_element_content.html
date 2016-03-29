@@ -34,7 +34,7 @@
   	</li>
   	<li>Add to the ol below</li>
   	<li>
-  		<button id="btn_1">Add more</button>
+  		<button id="btn_2">Add more</button>
   	</li>
   	<li>
   		<ol id="ole_1">
@@ -56,6 +56,13 @@
 		//.append() add to paragraph
 		$("#btn_1").click(function(){
 			$("#para_1").append("<p>Another Paragraph Added</p>");
+		});
+
+		//.append() add to paragraph
+		$("#btn_2").prop("disabled",false);
+		$("#btn_2").click(function(){
+			$(this).prop("disabled",true).fadeTo(1000, 0);
+			$("#ole_1").append("<li>yon</li>");
 		});
 
 	}); //end doc ready
