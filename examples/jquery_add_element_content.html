@@ -92,6 +92,13 @@
 			$("#para_3").prepend("<p>Another Paragraph Added Above</p>");
 		});
 
+		//.prepend() add to paragraph
+		$("#btn_4").prop("disabled",false);
+		$("#btn_4").click(function(){
+			$(this).prop("disabled",true).fadeTo(1000, 0);
+			$("#ole_4").prepend("<li>rei</li>");
+		});
+
 	}); //end doc ready
 </script>
 </body>
