@@ -111,10 +111,17 @@
 		});
 
     //.append
-    var ht = "<p>Text with HTML";
-    var jakey = $("<p></p>").text("Text with jQuery");
-    var doms = document.createElement("p");
-    $("#target_5").append(ht, jakey, doms);
+    function addingText(){
+      var ht = "<p>Text with HTML";
+      var jakey = $("<p></p>").text("Text with jQuery");
+      var doms = document.createElement("p");
+      $("#target_5").append(ht, jakey, doms);
+    }
+
+    $("#btn_5").click(function(){
+      addingText;
+    });
+    
 
 	}); //end doc ready
 </script>
