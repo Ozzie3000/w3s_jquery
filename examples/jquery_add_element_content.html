@@ -110,6 +110,12 @@
 			$("#ole_4").prepend("<li>rei</li>");
 		});
 
+    //.append
+    var ht = "<p>Text with HTML";
+    var jakey = $("<p></p>").text("Text with jQuery");
+    var doms = document.createElement("p");
+    $("#target_5").append(ht, jakey, doms);
+
 	}); //end doc ready
 </script>
 </body>
