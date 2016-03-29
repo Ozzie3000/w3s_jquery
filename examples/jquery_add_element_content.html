@@ -81,12 +81,18 @@
   <ul><span class="ul_tops">.before() .after() methods</span>
     <li>In can get more selective in where you place content</li>
     <li>
+      <button id="btn_6">Add before ichi</button>
+    </li>
+    <li>
       <ol>
         <li id="ichi">ichi</li>
         <li id="ni">ni</li>
         <li id="san">san</li>
         <li id="yon">yon</li>
       </ol>
+    </li>
+     <li>
+      <button id="btn_7">Add after yon</button>
     </li>
   </ul>
 
@@ -136,9 +142,15 @@
 
     //.before()
     $("#btn_6").click(function(){
+      $(this).prop("disabled",true).fadeTo(1000, 0);
       $("#ichi").before("<li id='rei'>rei</li>");
     });
-    
+
+    //.after()
+    $("#btn_7").click(function(){
+      $(this).prop("disabled",true).fadeTo(1000, 0);
+      $("#yon").after("<li id='go'>go</li>");
+    });
     
 
 	}); //end doc ready
