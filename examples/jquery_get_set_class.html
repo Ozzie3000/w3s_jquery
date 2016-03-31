@@ -38,6 +38,13 @@
   	</li>
   </ul>
 
+  <ul><span class="ul_tops">.addClass(class1 class2)</span>
+  	<li>Adding multiple classes to your selection</li>
+  	<li>
+  		<button id="btn_2">Add multiple class</button>
+  	</li>
+  </ul>
+
  
 
 <br><br><br>
@@ -49,6 +56,11 @@
 		//.addClass
 		$("#btn_1").click(function(){
 			$("h1, h2, p").addClass("new_color");
+		});
+
+		//.addClass
+		$("#btn_2").click(function(){
+			$("h1, h2, p").addClass("new_color2 bigger_text");
 		});
 
 	}); //end doc ready
