@@ -23,8 +23,8 @@
 	<br /><br />
   <h1>JS and jQuery | set and get classes</h1>
 
-  <ul><span class="ul_tops"></span>
-  	<li></li>
+  <ul><span class="ul_tops">.addClass() method</span>
+  	<li>Find various elements and add a class to them</li>
   </ul>
 
  
@@ -35,6 +35,10 @@
 
 
 	$(document).ready(function(){
+		//.addClass
+		$("#btn_1").click(function(){
+			$("#h1, h2, h3").addClass("blue");
+		});
 
 	}); //end doc ready
 </script>
