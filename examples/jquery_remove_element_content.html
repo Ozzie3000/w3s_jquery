@@ -42,7 +42,7 @@
 
   <div id="divvy_1">
   	<p>Paragraph A</p>
-  	<p>Paragraph B</p>
+  	<p class="go">Paragraph B</p>
   </div>
 
   <br>
@@ -83,7 +83,7 @@
 
 		//.remove .go
 		$("#btn_3").click(function(){
-			$("#divvy_1").remove(".go");
+			$("#divvy_1").children().remove(".go");
 		});
 
 	}); //end doc ready
