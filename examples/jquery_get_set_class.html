@@ -61,7 +61,7 @@
    <ul><span class="ul_tops">.toggleClass() method</span>
   	<li>Now find various elements and toggle classes</li>
   	<li>
-  		<button id="btn_3">Toggle multiple class</button>
+  		<button id="btn_4">Toggle multiple class</button>
   	</li>
   </ul>
 
@@ -86,6 +86,11 @@
 		//.removeClass
 		$("#btn_3").click(function(){
 			$("h1, h2, p").removeClass(" new_color new_color2 bigger_text");
+		});
+
+		//.toggleClass
+		$("#btn_4").click(function(){
+			$("h1, h2, p").toggleClass(" new_color new_color2 bigger_text");
 		});
 
 	}); //end doc ready
