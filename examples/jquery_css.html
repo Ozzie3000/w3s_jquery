@@ -35,9 +35,13 @@
   		<span id="span_1">Stuff goes here</span>
   	</li>
   	<li>
-  		<button id="btn_1">Add more</button>
+  		<button id="btn_1">Background</button>
   	</li>
   	<li id="target_1"></li>
+  	<li>
+  		<button id="btn_2">font size</button>
+  	</li>
+  	<li id="target_2"></li>
   </ul>
 
  
@@ -48,8 +52,14 @@
 
 
 	$(document).ready(function(){
+		//.css background
 		$("#btn_1").click(function(){
         $("#target_1").text("Background color = " + $("#span_1").css("background-color"));
+    });
+
+    //.css font-size
+		$("#btn_2").click(function(){
+        $("#target_2").text("font-size = " + $("#span_1").css("font-size"));
     });
 
 	}); //end doc ready
