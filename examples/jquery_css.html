@@ -11,7 +11,7 @@
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <style type="text/css">
 	#span_1{
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 900px;
 		font-family: "Georgia";
 	}
@@ -34,6 +34,10 @@
   	<li>
   		<span id="span_1">Stuff goes here</span>
   	</li>
+  	<li>
+  		<button id="btn_1">Add more</button>
+  	</li>
+  	<li id="target_1"></li>
   </ul>
 
  
@@ -44,8 +48,8 @@
 
 
 	$(document).ready(function(){
-		$("btn_1").click(function(){
-        $("#target_1").text("Background color = " + $("something").css("background-color"));
+		$("#btn_1").click(function(){
+        $("#target_1").text("Background color = " + $("#span_1").css("background-color"));
     });
 
 	}); //end doc ready
