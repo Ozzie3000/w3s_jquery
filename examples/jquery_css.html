@@ -42,6 +42,10 @@
   		<button id="btn_2">font size</button>
   	</li>
   	<li id="target_2"></li>
+  	<li>
+  		<button id="btn_3">font weight</button>
+  	</li>
+  	<li id="target_3"></li>
   </ul>
 
  
@@ -60,6 +64,11 @@
     //.css font-size
 		$("#btn_2").click(function(){
         $("#target_2").text("font-size = " + $("#span_1").css("font-size"));
+    });
+
+    //.css font-weight
+		$("#btn_3").click(function(){
+        $("#target_3").text("font-weight = " + $("#span_1").css("font-weight"));
     });
 
 	}); //end doc ready
