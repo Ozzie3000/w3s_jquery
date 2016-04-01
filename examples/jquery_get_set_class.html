@@ -52,7 +52,10 @@
   </ul>
 
   <ul><span class="ul_tops">.remove() method</span>
-  	<li></li>
+  	<li>Now find various elements and remove classes</li>
+  	<li>
+  		<button id="btn_3">Remove multiple class</button>
+  	</li>
   </ul>
 
  
@@ -71,6 +74,11 @@
 		//.addClass
 		$("#btn_2").click(function(){
 			$("h1, h2, p").addClass("new_color2 bigger_text");
+		});
+
+		//.removeClass
+		$("#btn_3").click(function(){
+			$("h1, h2, p").removeClass(" new_color new_color2 bigger_text");
 		});
 
 	}); //end doc ready
