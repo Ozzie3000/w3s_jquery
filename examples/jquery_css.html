@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <style type="text/css">
-	#span_1{
+	.span_c{
 		font-size: 20px;
 		font-weight: 900px;
 		font-family: "Georgia";
@@ -32,7 +32,7 @@
   <ul><span class="ul_tops">.css() method</span>
   	<li>You can use the .css() method to return the value of a property</li>
   	<li>
-  		<span id="span_1">Stuff goes here</span>
+  		<span id="span_1" class="span_c">Stuff goes here</span>
   	</li>
   	<li>
   		<button id="btn_1">Background</button>
@@ -49,7 +49,13 @@
   </ul>
 
   <ul><span class="ul_tops">Set .css() properties</span>
-    <li></li>
+    <li>Now we will specify properties to set</li>
+    <li>
+      <button id="btn_4">font size</button>
+    </li>
+    <li>
+      <span id="span_2" class="span_c">Stuff goes here as well</span>
+    </li>
   </ul>
 
  
@@ -77,10 +83,10 @@
 
     //.css() setting
     $("#btn_4").click(function(){
-      $("#target_4").css({
-        property:value;
-        property:value;
-        property:value;
+      $("#span_2").css({
+        "opacity":"0.5",
+        "color":"#00BFFF",
+        "font-family":"sans-serif"
       });
     });
 
