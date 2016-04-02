@@ -48,6 +48,10 @@
   	<li id="target_3"></li>
   </ul>
 
+  <ul><span class="ul_tops">Set .css() properties</span>
+    <li></li>
+  </ul>
+
  
 
 <br><br><br>
@@ -58,17 +62,26 @@
 	$(document).ready(function(){
 		//.css background
 		$("#btn_1").click(function(){
-        $("#target_1").text("Background color = " + $("#span_1").css("background-color"));
+      $("#target_1").text("Background color = " + $("#span_1").css("background-color"));
     });
 
     //.css font-size
 		$("#btn_2").click(function(){
-        $("#target_2").text("font-size = " + $("#span_1").css("font-size"));
+      $("#target_2").text("font-size = " + $("#span_1").css("font-size"));
     });
 
     //.css font-weight
 		$("#btn_3").click(function(){
-        $("#target_3").text("font-weight = " + $("#span_1").css("font-weight"));
+      $("#target_3").text("font-weight = " + $("#span_1").css("font-weight"));
+    });
+
+    //.css() setting
+    $("#btn_4").click(function(){
+      $("#target_4").css({
+        property:value;
+        property:value;
+        property:value;
+      });
     });
 
 	}); //end doc ready
