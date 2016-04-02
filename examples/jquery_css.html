@@ -56,6 +56,10 @@
     <li>
       <span id="span_2" class="span_c">Stuff goes here as well</span>
     </li>
+    <li>All spans</li>
+    <li>
+      <button id="btn_5">Apply to all spans</button>
+    </li>
   </ul>
 
  
@@ -84,6 +88,15 @@
     //.css() setting
     $("#btn_4").click(function(){
       $("#span_2").css({
+        "opacity":"0.5",
+        "color":"#00BFFF",
+        "font-family":"sans-serif"
+      });
+    });
+
+    //.css() setting
+    $("#btn_5").click(function(){
+      $("span").css({
         "opacity":"0.5",
         "color":"#00BFFF",
         "font-family":"sans-serif"
