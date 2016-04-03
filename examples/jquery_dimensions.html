@@ -41,7 +41,8 @@
   		<span id="target_1"></span>
   	</li>
   	<li>
-  		<button id="btn_2">width</button>
+  		<button id="btn_2">width</button> &nbsp;&nbsp;
+  		<span id="target_2"></span>
   	</li>
   	<li id="target_3"></li>
   </ul>
@@ -60,6 +61,12 @@
 		$("#btn_1").click(function(){
 			var hei = $("#divvy_1").height();
 			$("#target_1").text(hei + " px");
+		});
+
+		//width
+		$("#btn_2").click(function(){
+			var wid = $("#divvy_1").width();
+			$("#target_2").text(wid + " px");
 		});
 
 		//width and height
