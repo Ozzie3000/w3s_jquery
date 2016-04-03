@@ -93,6 +93,18 @@
 			$("#target_3").text("The height is: " + hei_1 + " and the width is: " + wid_1);
 		});
 
+		//inner height
+		$("#btn_4").click(function(){
+			var hei = $("#divvy_1").innerHeight();
+			$("#target_4").text(hei + " px");
+		});
+
+		//inner width
+		$("#btn_5").click(function(){
+			var wid = $("#divvy_1").innerWidth();
+			$("#target_5").text(wid + " px");
+		});
+
 	}); //end doc ready
 </script>
 </body>
