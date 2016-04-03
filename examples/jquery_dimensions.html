@@ -42,6 +42,7 @@
   	<li>
   		<button id="btn_2">width</button>
   	</li>
+  	<li id="target_3"></li>
   </ul>
 
   <div id="divvy_1" class="div_c1"></div>
@@ -54,11 +55,17 @@
 
 
 	$(document).ready(function(){
-		//width
+		//height
 		$("#btn_1").click(function(){
+			var hei = $("#divvy_1").height();
+			$("#target_1").text(hei + " px");
+		});
+
+		//width and height
+		$("#btn_3").click(function(){
 			var wid_1 = $("#divvy_1").width();
 			var hei_1 = $("#divvy_1").height();
-			$("#target_1").text("The height is: " + hei_1 + " and the width is: " + wid_1);
+			$("#target_3").text("The height is: " + hei_1 + " and the width is: " + wid_1);
 		});
 
 	}); //end doc ready
