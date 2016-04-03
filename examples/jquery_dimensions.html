@@ -12,10 +12,10 @@
 <style type="text/css">
 	.div_c1 {
     height: 100px;
-    width: 300px;
+    width: 500px;
     padding: 5px;
     margin: 3px;
-    border: 2px solid #00BFFF;
+    border: 3px solid #00BFFF;
     background-color: #1E90FF;
 	}
 </style>
@@ -54,6 +54,12 @@
 
 
 	$(document).ready(function(){
+		//width
+		$("#btn_1").click(function(){
+			var wid_1 = $("#divvy_1").width();
+			var hei_1 = $("#divvy_1").height();
+			$("#target_1").text("The height is: " + hei_1 + " and the width is: " + wid_1);
+		});
 
 	}); //end doc ready
 </script>
