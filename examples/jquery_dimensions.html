@@ -180,6 +180,16 @@
       $("#target_10").text(dims);
     });
 
+    //window dimensions
+    $("#btn_11").click(function(){
+      var hei = $(window).height();
+      var wid = $(window).width();
+      var dims = "";
+      dims = "Window height is: " + hei + "px and width is: " + wid + " px";
+      $("#target_11").text(dims);
+    });
+
+
 	}); //end doc ready
 </script>
 </body>
