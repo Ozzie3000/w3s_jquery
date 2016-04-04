@@ -95,8 +95,9 @@
   <ul><span class="ul_tops">Dimensions on the document itself</span>
   	<li>Sometimes you need to know the dimensions of the document</li>
     <li>
-      <button id="btn_10">Window dimensions</button>
+      <button id="btn_10">Document dimensions</button>
     </li>
+    <li id="target_10"></li>
   </ul>
 
  
@@ -161,6 +162,15 @@
 			var hei = $("#divvy_1").outerWidth(true);
 			$("#target_9").text(hei + " px");
 		});
+
+    //Document dimensions
+    $("#btn_10").click(function(){
+      var hei = $(document).height();
+      var wid = $(document).width();
+      var dims = "";
+      dims = "Document height is: " + hei + "px and width is: " + wid + " px";
+      $("#target_10").text(dims);
+    });
 
 	}); //end doc ready
 </script>
