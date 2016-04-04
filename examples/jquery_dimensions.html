@@ -114,6 +114,9 @@
     <li>
       <button id="btn_12">Resize div</button>
     </li>
+    <li>
+      <button id="btn_13">Reset div</button>
+    </li>
   </ul>
 
   <div id="divvy_2" class="div_c1">
@@ -205,6 +208,12 @@
     $("#btn_12").click(function(){
       $("#divvy_2").height(77).width(777);
       $("#divvy_2").text("resized me");
+    });
+
+    //reset div
+    $("#btn_13").click(function(){
+      $("#divvy_2").height(100).width(500);
+      $("#divvy_2").text("");
     });
 
 
