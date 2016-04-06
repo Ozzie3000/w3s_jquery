@@ -68,6 +68,13 @@
 			$("#target_2").text(kiddies);
 		});
 
+		//find stuff
+		$("#btn_3").click(function(){
+			var gotcha = $("body").find("#haha").text();
+			$("#target_3").text(gotcha);
+			$("body").find("#haha").css({"color":"red", "font-family":"Sans-Serif"});
+		});
+
 	}); //end doc ready
 </script>
 </body>
