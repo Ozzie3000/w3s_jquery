@@ -42,7 +42,8 @@
 
 	$(document).ready(function(){
 		$("#btn_1").click(function(){
-			var kiddies = $("ul").eq(0).children().length;
+			var kiddies = $("ul").eq(0).children("li").length;
+			$("#target_1").text(kiddies);
 		});
 
 	}); //end doc ready
