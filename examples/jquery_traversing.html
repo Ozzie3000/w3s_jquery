@@ -46,9 +46,16 @@
 
 
 	$(document).ready(function(){
+		//just li children
 		$("#btn_1").click(function(){
 			var kiddies = $("ul").eq(0).children("li").length;
 			$("#target_1").text(kiddies);
+		});
+
+		//all children
+		$("#btn_2").click(function(){
+			var kiddies = $("ul").eq(0).children().length;
+			$("#target_2").text(kiddies);
 		});
 
 	}); //end doc ready
