@@ -62,9 +62,9 @@
   	<li>$(selector).next();</li>
     <li>What is next to haha?</li>
     <li>
-      <button id="btn_4">Next to haha</button>
+      <button id="btn_5">Next to haha</button>
     </li>
-    <li id="target_4"></li>
+    <li id="target_5"></li>
   </ul>
 
  
@@ -98,6 +98,11 @@
 		$("#btn_4").click(function(){
 			$("#haha").siblings().css({"color":"#00BFFF"});
 		});
+
+    //next blue-ish
+    $("#btn_5").click(function(){
+      $("#haha").next().css({"color":"#00BFFF"});
+    });
 
 	}); //end doc ready
 </script>
