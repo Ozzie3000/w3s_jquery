@@ -23,7 +23,7 @@
 	<br /><br />
   <h1>S and jQuery | traversing with filtering</h1>
 
-  <ul><span class="ul_tops">.first() method</span>
+  <ul id="ul_1"><span class="ul_tops">.first() method</span>
   	<li id="ichi">Fairly straight forward. Grab the first one in your selection</li>
   	<li id="ni">ni</li>
   	<li id="san">san</li>
@@ -33,6 +33,7 @@
   	<li>
 	  	<button id="btn_2">last li blue-ish</button>
 	  </li>
+	  <li>This is the last li here</li>
   </ul>
 
  
@@ -45,7 +46,12 @@
 	$(document).ready(function(){
 		//first method
 		$("#btn_1").click(function(){
-			$("li").first().css({"color":"#00BFFF", "font-weight":"900"});
+			$("#ul_1 li").first().css({"color":"#00BFFF", "font-weight":"900"});
+		});
+
+		//last method
+		$("#btn_2").click(function(){
+			$("#ul_1 li").last().css({"color":"#00BFFF", "font-weight":"900"});
 		});
 
 	}); //end doc ready
