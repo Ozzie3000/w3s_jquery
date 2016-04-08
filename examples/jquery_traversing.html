@@ -88,7 +88,7 @@
     <li>
       <button id="btn_7">Blues Brothers</button>
     </li>
-
+    <li id="target_7"></li>
   </ul>
 
  
@@ -137,8 +137,8 @@
 
     //nextUntil blue-ish
     $("#btn_7").click(function(){
-      $("#haha").nextUntil("stophere").css({"color":"#00BFFF"});
-      $("#target_7").text($("#haha").nextUntil("stophere").text());
+      $("#haha").nextUntil("#stophere").css({"color":"#00BFFF"});
+      $("#target_7").text($("#haha").nextUntil("#stophere").text());
     });
 
 	}); //end doc ready
