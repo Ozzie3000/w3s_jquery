@@ -37,7 +37,12 @@
   </ul>
 
   <ul><span class="ul_tops">The .eq() method</span>
-  	<li></li>
+  	<li>Think of indeces with this one</li>
+  	<li>Remember it starts 0th</li>
+  	<li>Hightlight the 0th li above</li>
+  	<li>
+  		<button id="btn_3">hightlist 0th</button>
+  	</li>
   </ul>
 
  
@@ -56,6 +61,11 @@
 		//last method
 		$("#btn_2").click(function(){
 			$("#ul_1 li").last().css({"color":"#00BFFF", "font-weight":"900"});
+		});
+
+		//eq
+		$("#btn_3").click(function(){
+			$("#ul_1 li").eq(0).css({"background-color":"yellow"});
 		});
 
 	}); //end doc ready
