@@ -52,7 +52,10 @@
   <ul><span class="ul_tops">The .filter() method</span>
   	<li>The filter method is used to narrow down your return</li>
   	<li>
-  		<button id="btn_5">filter san</button>
+  		<button id="btn_5">filter ni</button>
+  	</li>
+  	<li>
+  		<button id="btn_6">filter san</button>
   	</li>
   </ul>
 
@@ -86,6 +89,11 @@
 
 		//filter 1
 		$("#btn_5").click(function(){
+			$("#ul_1 li").filter("#ni").css({"background-color":"yellow"});
+		});
+
+		//filter 1
+		$("#btn_6").click(function(){
 			$("#ul_1 li").filter("#san").css({"background-color":"yellow"});
 		});
 
